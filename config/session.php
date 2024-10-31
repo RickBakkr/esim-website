@@ -214,4 +214,8 @@ return [
 
     'partitioned' => env('SESSION_PARTITIONED_COOKIE', false),
 
+    'constants' => [
+        'currency' => 'GOSIM_CURRENCY_SESSION',
+    ],
+
 ];

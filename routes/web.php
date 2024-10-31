@@ -1,20 +1,26 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\CurrencyController;
+use App\Http\Controllers\SitemapController;
+use App\Http\Controllers\WebsiteController;
+use App\Http\Middleware\SetLocaleMiddleware;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+require __DIR__ . '/sitemap.php';
+
+Route::group(['prefix' => '{locale?}', 'middleware' => SetLocaleMiddleware::class], function () {
+    // home
+    Route::get('/', [WebsiteController::class, 'index'])->name('home');
+
+    // supported devices
+    Route::get('/supported-devices', [WebsiteController::class, 'supportedDevices'])->name('supported-devices');
+
+    // contact page
+    Route::get('/contact', [WebsiteController::class, 'contact'])->name('contact');
+
+    // currency switcher
+    Route::get('/currency/{currency}', [CurrencyController::class, 'setCurrencySession'])->name('set-currency');
+
+    // fallback is needed
+    Route::get('/{countryCode}-{slug?}', [WebsiteController::class, 'country'])->name('esim-bundle-per-country');
 });
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
-
-require __DIR__.'/auth.php';
