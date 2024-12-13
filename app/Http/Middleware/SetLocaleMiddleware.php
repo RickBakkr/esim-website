@@ -36,7 +36,7 @@ class SetLocaleMiddleware
             if (isset($geo[0])) {
                 $geo = $geo[0];
             }
-            if ($geo && $geo->country) {
+            if ($geo && isset($geo->country)) {
                 $countryCode = $geo->country;
                 $country = Country::where('code', $countryCode)->first();
                 if ($country) {
