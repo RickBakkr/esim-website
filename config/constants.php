@@ -1,11 +1,17 @@
 <?php
 return [
     'popular_destinations' => [
-        'nl',
+        'gb',
         'us',
-        'al',
+        'se',
+        'nl',
+        'de',
         'ch',
-        'cw',
-        'in',
+        'fr',
+        'es',
+        'ca',
+        'pt',
+        'kr',
+        'ua',
     ],
 ];

@@ -2,6 +2,21 @@
 
 use App\Models\Currency;
 
+function countrySuggestions() {
+    $array = [];
+
+    foreach(\App\Models\Country::all() as $country) {
+        $array[] = [
+            'name' => trans('countries.' . $country->code),
+            'englishName' => $country->name,
+            'flag' => asset('images/flags/' . strtolower($country->code) . '.svg'),
+            'link' => getRoute('esim-bundle-per-country', ['countryCode' => strtolower($country->code), 'slug' => slug(trans('countries.' . strtoupper($country->code)))]),
+        ];
+    }
+
+    return $array;
+}
+
 function varexport($expression, $return=FALSE) {
     $export = var_export($expression, TRUE);
     $patterns = [
@@ -46,7 +61,9 @@ function getSupportedNetworks() {
 }
 
 function getRandomReviews($take = 3) {
-    $reviews = trans('reviews');
+    $reviews = trans('reviews', [
+        'organisationName' => config('app.name'),
+    ]);
 
     $reviews = collect($reviews)->shuffle()->take($take);
 
@@ -67,4 +84,9 @@ function slug(string $input) {
     return strtolower(
       preg_replace('/[^A-Za-z0-9-]+/', '-', $input)
     );
+}
+
+function getTranslationParameters($translation) {
+    preg_match_all('/:(\w+)/', $translation, $matches);
+    return $matches[0];
 }

@@ -5,74 +5,58 @@
 return [
   [
     'question' => 'What is an eSIM and how can I use :organisationName?',
-    'answer' => 'An eSIM, or embedded SIM, is a digital SIM card that enables users to activate and manage multiple cellular plans on a single device without needing a physical SIM card. With an eSIM, you can easily switch between cellular providers and enjoy features like adding an extra line for international travel or maintaining separate data plans for personal and business use.',
+    'answer' => 'An eSIM, or embedded SIM, is a digital SIM card that allows users to activate and manage multiple mobile plans on one device without needing a physical SIM card. With an eSIM, you can easily switch between mobile providers and enjoy features such as adding an extra line for international travel or maintaining separate data plans for personal and business use.',
   ],
   [
-    'question' => 'How do I activate eSIM mobile Internet with :organisationName?',
-    'answer' => 'To connect to the internet using :organisationName eSIM, follow these steps: 1. Go to your Mobile Data settings. 2. Turn on the :organisationName mobile line. 3. Activate Data Roaming. 4. Select the :organisationName Internet line as your primary connection. *Avoid selecting the "Remove Data Plan" option, as this will delete your eSIM profile.*',
+    'question' => 'How do I activate eSIM mobile internet with :organisationName?',
+    'answer' => 'To connect to the internet using the :organisationName eSIM, follow these steps: 1. Go to your Mobile Data settings. 2. Turn on the :organisationName mobile line. 3. Activate Data roaming. 4. Select the :organisationName Internet line as your primary connection. *Avoid selecting the option "Remove data plan," as this will delete your eSIM profile.*',
   ],
   [
-    'question' => 'Can I make phone calls or send SMS?',
-    'answer' => ':organisationName\'s prepaid eSIM plans are designed for data-only usage and do not include a mobile phone number for traditional calls or texts. We recommend using VoIP applications like Facebook Messenger, WhatsApp, Viber, Telegram, or Skype to stay connected globally without the need for a standard international SIM card.',
+    'question' => 'Can I make phone calls or send text messages?',
+    'answer' => ':organisationName\'s prepaid eSIM plans are designed for data-only use and do not include a mobile phone number for traditional calls or SMS messages. We recommend using VoIP applications such as Facebook Messenger, WhatsApp, Viber, Telegram, or Skype to stay connected worldwide without the need for a standard international SIM card.',
   ],
   [
     'question' => 'Can an eSIM card be reused?',
-    'answer' => 'Each QR code for an eSIM is unique and can only be used on one device. Once the eSIM profile is deleted, the QR code cannot be reused on the same or any other device, ensuring security and exclusivity.',
+    'answer' => 'Each QR code for an eSIM is unique and can only be used on one device. Once the eSIM profile is deleted, the QR code cannot be reused on the same or another device, ensuring security and exclusivity.',
   ],
   [
-    'question' => 'Is my device compatible with eSIM technology and the :organisationName app?',
-    'answer' => ':organisationName is compatible with a wide range of Apple and Android smartphones. Please refer to our comprehensive list of compatible devices to see if your device supports eSIM.',
+    'question' => 'When does the duration of the eSIM mobile data plans start?',
+    'answer' => 'The duration of your eSIM data plan begins immediately after your device first connects to a mobile network with the eSIM.',
   ],
   [
-    'question' => 'When does the eSIM mobile data plan duration start?',
-    'answer' => 'The duration of your eSIM data plan begins immediately upon completion of your purchase. If you prefer to activate your mobile internet later, you can select "Activate later" during your purchase, allowing you to activate it within the next 12 months.',
-  ],
-  [
-    'question' => 'Can I extend the expiration of my current eSIM cellular data plan?',
-    'answer' => 'Absolutely! You will receive a push notification and email when you reach 70% of your data usage. At that point, you can easily top up your :organisationName account through our app, which offers various payment options for your convenience.',
-  ],
-  [
-    'question' => 'Do you have an affiliate system?',
-    'answer' => 'Yes, we offer an affiliate program that allows you to earn commissions by referring friends, family, or followers to :organisationName. You can find more information about our affiliate program in the "Affiliate" section of our customer portal.',
-  ],
-  [
-    'question' => 'Can I get a refund for :organisationName services?',
-    'answer' => ':organisationName provides refunds for eSIM data plans and top-ups purchased within 30 days, provided they have not been used or expired. Ycoins are non-refundable unless there is a confirmed technical issue. To request a refund, please contact us at info@yesim.app or through the contact form in the :organisationName application, and our team will assist you.',
+    'question' => 'Can I extend the expiration date of my current eSIM mobile data plan?',
+    'answer' => 'Sure! You will receive multiple push notifications when you are almost out of your bundle. You can easily top up through your personal portal.',
   ],
   [
     'question' => 'Can I use tethering or Personal Hotspot with :organisationName?',
-    'answer' => 'Yes, you can share your mobile data with other devices using your :organisationName profile. Simply install the :organisationName profile on your device and enable Personal Hotspot in your settings. This feature is included at no extra cost, but please note that tethered data usage will be deducted from your plan.',
+    'answer' => 'Yes, you can share your mobile data with other devices via your :organisationName-eSIM. Simply install the :organisationName-eSIM on your device and enable Personal Hotspot in your settings. This feature is included at no extra cost, but please note that using tethered data will be deducted from your plan.',
   ],
   [
-    'question' => 'Can I keep my personal messaging app numbers while using :organisationName\'s eSIM?',
-    'answer' => 'Yes, you can continue using your WhatsApp, Snapchat, Telegram, and other messaging apps alongside your :organisationName prepaid eSIM without any issues.',
+    'question' => 'Can I keep my personal messaging app numbers while using the eSIM from :organisationName?',
+    'answer' => 'Yes, you can continue to use your WhatsApp, Snapchat, Telegram, and other messaging apps alongside your :organisationName prepaid eSIM without any issues.',
   ],
   [
-    'question' => 'How do I transfer my eSIM to a new phone?',
-    'answer' => 'Before transferring, ensure that your new smartphone supports eSIM technology. Contact our support team to create a new eSIM profile, then log into your :organisationName account on the new device to install the QR code. Make sure to confirm that you are using a different device for accurate settings updates.',
+    'question' => 'How can I transfer my eSIM to a new phone?',
+    'answer' => 'Before you transfer, make sure your new smartphone supports eSIM technology. Contact our support team to create a new eSIM profile, then log in to your :organisationName account on the new device to install the QR code. Make sure you confirm that you are using a different device for accurate settings updates.',
   ],
   [
-    'question' => 'Are there any contracts like those from traditional eSIM carriers?',
-    'answer' => 'No, :organisationName does not require you to sign any contracts. You can activate or deactivate your eSIM card at your convenience, depending on your travel plans.',
+    'question' => 'Are there contracts like those of traditional eSIM providers?',
+    'answer' => 'No, :organisationName does not require you to sign contracts. You can activate or deactivate your eSIM card as you wish, depending on your plans. We are happy to help you.',
   ],
   [
     'question' => 'What is the difference between :organisationName\'s eSIM and standard roaming data plans from physical mobile operators?',
-    'answer' => ':organisationName offers contract-free data plans with no hidden roaming fees. You only pay for the data you use based on the eSIM plan you choose, making it a more economical option.',
-  ],
-  [
-    'question' => 'What is the fair usage policy for eSIM unlimited data plans?',
-    'answer' => 'To cater to our users\' needs, :organisationName has introduced unlimited data plans with a Fair Usage Policy (FUP). After a specified data threshold is reached, a speed reduction may apply. Our unlimited plans include options for 7, 15, or 30 days. Even after high-speed data is consumed, users can still access unlimited data for browsing and emailing at a reduced speed.',
+    'answer' => ':organisationName offers contract-free data plans without hidden roaming costs. You only pay for the data you use, depending on the bundle you choose, making it often a more economical option.',
   ],
   [
     'question' => 'Why is my data speed slow?',
-    'answer' => 'Data speed can be influenced by several factors, including your smartphone type, network technology, the websites or apps you use, and the time of day. Additionally, speeds can vary depending on the country\'s network infrastructure. If you\'re experiencing slow speeds, try rebooting your phone and share any speed test results with us, especially comparisons with and without LTE mode enabled.',
+    'answer' => 'Data speed can be affected by various factors, including the type of smartphone you have, network technology, the websites or apps you use, and the time of day. In addition, speeds can vary depending on the network infrastructure of the country. If you are experiencing slow speeds, try restarting your phone and share any speed results with us, especially comparisons with and without :LTE mode enabled.',
   ],
   [
-    'question' => 'How can I check my data plan balance and limits?',
-    'answer' => 'You can track your remaining data usage and limits in the "Internet" section of the :organisationName application or by signing in to your profile on our website, yesim.app.',
+    'question' => 'How can I view my bundles?',
+    'answer' => 'You can track your remaining data and limits in our customer panel.',
   ],
   [
     'question' => 'What makes :organisationName different from other eSIM services?',
-    'answer' => ':organisationName stands out by partnering with local operators across 200+ countries, providing cost-effective data packs without middlemen. We offer robust coverage, virtual phone numbers, integrated VPN technology for enhanced security, and an easy activation process. With flexible payment options, unlimited data plans, and a referral system, :organisationName is tailored for travelers seeking comprehensive mobile internet solutions.',
+    'answer' => ':organisationName stands out by collaborating with local operators in over 200 countries, offering cost-effective data packages without intermediaries. We provide robust coverage and a simple activation process. :organisationName is perfect for travelers looking for mobile internet solutions.',
   ],
 ];

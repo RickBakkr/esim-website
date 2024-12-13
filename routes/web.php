@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\CurrencyController;
-use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\WebsiteController;
 use App\Http\Middleware\SetLocaleMiddleware;
 use Illuminate\Support\Facades\Route;
@@ -15,8 +14,11 @@ Route::group(['prefix' => '{locale?}', 'middleware' => SetLocaleMiddleware::clas
     // supported devices
     Route::get('/supported-devices', [WebsiteController::class, 'supportedDevices'])->name('supported-devices');
 
-    // contact page
-    Route::get('/contact', [WebsiteController::class, 'contact'])->name('contact');
+    // all destinations
+    Route::get('/destinations', [WebsiteController::class, 'destinations'])->name('destinations');
+
+    // about page
+    Route::get('/about', [WebsiteController::class, 'about'])->name('about');
 
     // currency switcher
     Route::get('/currency/{currency}', [CurrencyController::class, 'setCurrencySession'])->name('set-currency');

@@ -24,13 +24,36 @@ class OpenaiService
             ]);
 
             if ($result->choices && count($result->choices) > 0 && $result->choices[0]->message) {
-                return $result->choices[0]->message->content ?? $string;
-
-            } else {
-                return $string;
+                $results = $result->choices[0]->message->content ?? $string;
             }
+
+            $originalParamters = getTranslationParameters($string);
+            $translatedParameters = getTranslationParameters($results);
+
+            // get those that are in translated, but not in original;
+            $addedParameters = array_diff($translatedParameters, $originalParamters);
+
+            foreach($addedParameters as $addedParameter) {
+                $results = str_replace($addedParameter, str_replace(':', '', $addedParameter), $results);
+            }
+
+            $originalParamters = getTranslationParameters($string);
+            $translatedParameters = getTranslationParameters($results);
+
+            if(count($originalParamters) > 0 || count($translatedParameters) > 0) {
+                var_dump($originalParamters);
+                var_dump($translatedParameters);
+            }
+
+            // check if all values in the original parameters are present in the translated parameters, and vice versa
+            if(count(array_diff($originalParamters, $translatedParameters)) == 0 && count(array_diff($translatedParameters, $originalParamters)) == 0) {
+                return $results;
+            } else {
+                return null;
+            }
+
         } catch (\Throwable $th) {
-            return $string;
+            return null;
         }
     }
 

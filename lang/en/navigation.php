@@ -5,5 +5,8 @@
 return [
   'home' => 'Home',
   'supported-devices' => 'Supported devices',
+  'destinations' => 'All destinations',
+  'about' => 'About',
   'contact' => 'Contact',
+  'portal_link' => 'My Portal',
 ];

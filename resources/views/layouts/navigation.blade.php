@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+<nav x-data="{ open: false }" class="bg-neutral-800">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ getRoute('home') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800"/>
+                        <x-application-logo class="block h-9 w-auto fill-current text-white"/>
                     </a>
                 </div>
 
@@ -18,8 +18,11 @@
                     <x-nav-link :href="getRoute('supported-devices')" :active="request()->routeIs('supported-devices')">
                         {{ trans('navigation.supported-devices') }}
                     </x-nav-link>
-                    <x-nav-link :href="getRoute('contact')" :active="request()->routeIs('contact')">
-                        {{ trans('navigation.contact') }}
+                    <x-nav-link :href="getRoute('destinations')" :active="request()->routeIs('destinations')">
+                        {{ trans('navigation.destinations') }}
+                    </x-nav-link>
+                    <x-nav-link :href="getRoute('about')" :active="request()->routeIs('about')">
+                        {{ trans('navigation.about') }}
                     </x-nav-link>
                 </div>
             </div>
@@ -32,8 +35,8 @@
 
                 <x-nav-link :href="env('MIJN_GOSIM_URL')" target="_blank" class="hover:border-b-0">
 
-                    <button type="button" class="rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition ease-in-out duration-150 gap-2 w-full">
-                        Mijn {{ config('app.name') }}
+                    <button type="button" class="rounded-md bg-red-300 hover:bg-red-500 focus-visible:outline-red-200 px-3 py-1.5 text-sm font-semibold leading-6 text-gray-800 shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 transition ease-in-out duration-150 gap-2 w-full">
+                        {{ trans('navigation.portal_link', ['organisationName' => config('app.name')]) }}
                     </button>
 
                 </x-nav-link>
@@ -57,7 +60,7 @@
 
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
-        <div class="pt-2 pb-3 space-y-1">
+        <div>
             <x-responsive-nav-link :href="getRoute('home')" :active="request()->routeIs('home')">
                 {{ trans('navigation.home') }}
             </x-responsive-nav-link>
@@ -65,23 +68,20 @@
                                    :active="request()->routeIs('supported-devices')">
                 {{ trans('navigation.supported-devices') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="getRoute('contact')" :active="request()->routeIs('contact')">
-                {{ trans('navigation.contact') }}
+            <x-responsive-nav-link :href="getRoute('destinations')" :active="request()->routeIs('destinations')">
+                {{ trans('navigation.destinations') }}
             </x-responsive-nav-link>
-        </div>
+            <x-responsive-nav-link :href="getRoute('about')" :active="request()->routeIs('about')">
+                {{ trans('navigation.about') }}
+            </x-responsive-nav-link>
 
-        <!-- Responsive Settings Options -->
-        <div class="pt-4 pb-1 border-t border-gray-200">
-            <div class="px-4">
-                {{--                <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>--}}
-                {{--                <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>--}}
-            </div>
+            <x-responsive-nav-link :href="env('MIJN_GOSIM_URL')" target="_blank">
+                {{ trans('navigation.portal_link', ['organisationName' => config('app.name')]) }}
+            </x-responsive-nav-link>
 
-            <div class="mt-3 space-y-1">
-                <x-responsive-nav-link :href="'xxxx'">
-                    {{ __('Profile') }}
-                </x-responsive-nav-link>
-            </div>
+            @include('partials.currency-nav-mobile')
+
+            @include('partials.language-nav-mobile')
         </div>
     </div>
 </nav>

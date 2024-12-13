@@ -115,7 +115,14 @@ class GenerateTranslationsCommand extends Command
     }
 
     private function translateString(string $originContent, string $origin, string $target) {
-        return $this->openaiService->translateString($originContent, $origin, $target);
+        $translated = $this->openaiService->translateString($originContent, $origin, $target);
+
+        if($translated == null) {
+            $this->error('Failed to translate: ' . $originContent);
+            return $originContent;
+        } else {
+            return $translated;
+        }
     }
 
     private function translateArray(array $originContent, string $origin, string $target)

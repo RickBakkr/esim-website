@@ -5,74 +5,58 @@
 return [
   [
     'question' => 'Wat is een eSIM en hoe kan ik :organisationName gebruiken?',
-    'answer' => 'Een eSIM, ofwel ingebedde SIM, is een digitale SIM-kaart waarmee gebruikers meerdere mobiele abonnementen kunnen activeren en beheren op één apparaat zonder een fysieke SIM-kaart nodig te hebben. Met een eSIM kunt u eenvoudig wisselen tussen mobiele providers en genieten van functies zoals het toevoegen van een extra lijn voor internationale reizen of het behouden van aparte dataplannen voor persoonlijk en zakelijk gebruik.',
+    'answer' => 'Een eSIM, of embedded SIM, is een digitale SIM-kaart die gebruikers in staat stelt om meerdere mobiele plannen op één apparaat te activeren en te beheren zonder een fysieke SIM-kaart nodig te hebben. Met een eSIM kun je eenvoudig schakelen tussen mobiele providers en genieten van functies zoals het toevoegen van een extra lijn voor internationale reizen of het onderhouden van aparte dataplannen voor persoonlijk en zakelijk gebruik.',
   ],
   [
-    'question' => 'Hoe activeer ik eSIM mobiel internet met :organisationName?',
-    'answer' => 'Om verbinding te maken met het internet met behulp van :organisationName eSIM, volg deze stappen: 1. Ga naar je Mobiele Data instellingen. 2. Schakel de :organisationName mobiele lijn in. 3. Activeer Dataroaming. 4. Selecteer de :organisationName Internetlijn als je primaire verbinding. *Vermijd het selecteren van de optie "Verwijder Dataplannen", aangezien dit je eSIM-profiel zal verwijderen.*',
+    'question' => 'Hoe activeer ik eSIM mobiele internet met :organisationName?',
+    'answer' => 'Om verbinding te maken met internet met behulp van :organisationName eSIM, volg deze stappen: 1. Ga naar je Mobiele Data-instellingen. 2. Zet de :organisationName mobiele lijn aan. 3. Activeer Dataroaming. 4. Selecteer de :organisationName Internetlijn als je primaire verbinding. *Vermijd het selecteren van de optie "Verwijder dataplanning", omdat dit je eSIM-profiel zal verwijderen.*',
   ],
   [
     'question' => 'Kan ik telefoongesprekken voeren of sms\'jes versturen?',
-    'answer' => 'De prepaid eSIM-plannen van :organisationName zijn ontworpen voor alleen datagebruik en bevatten geen mobiel telefoonnummer voor traditionele oproepen of sms\'jes. We raden aan om VoIP-toepassingen zoals Facebook Messenger, WhatsApp, Viber, Telegram of Skype te gebruiken om wereldwijd verbonden te blijven zonder de noodzaak van een standaard internationale SIM-kaart.',
+    'answer' => ':organisationName\'s prepaid eSIM-plannen zijn ontworpen voor data-only gebruik en bevatten geen mobiel telefoonnummer voor traditionele oproepen of sms-berichten. We raden aan om VoIP-applicaties zoals Facebook Messenger, WhatsApp, Viber, Telegram of Skype te gebruiken om wereldwijd verbonden te blijven zonder de noodzaak van een standaard internationale SIM-kaart.',
   ],
   [
     'question' => 'Kan een eSIM-kaart opnieuw worden gebruikt?',
-    'answer' => 'Elke QR-code voor een eSIM is uniek en kan alleen op één apparaat worden gebruikt. Nadat het eSIM-profiel is verwijderd, kan de QR-code niet opnieuw worden gebruikt op hetzelfde of een ander apparaat, wat zorgt voor veiligheid en exclusiviteit.',
+    'answer' => 'Elke QR-code voor een eSIM is uniek en kan alleen op één apparaat worden gebruikt. Zodra het eSIM-profiel is verwijderd, kan de QR-code niet opnieuw worden gebruikt op hetzelfde of een ander apparaat, wat zorgt voor veiligheid en exclusiviteit.',
   ],
   [
-    'question' => 'Is mijn apparaat compatibel met eSIM-technologie en de :organisationName-app?',
-    'answer' => ':organisationName is compatibel met een breed scala aan Apple en Android smartphones. Raadpleeg onze uitgebreide lijst met compatibele apparaten om te zien of uw apparaat eSIM ondersteunt.',
+    'question' => 'Wanneer begint de duur van het eSIM mobiele dataplans?',
+    'answer' => 'De duur van uw eSIM-dataplan begint onmiddellijk na de eerste keer dat jouw apparaat met de eSIM verbinding maakt met een mobiel netwerk.',
   ],
   [
-    'question' => 'Wanneer begint de duur van het eSIM mobiele data-abonnement?',
-    'answer' => 'De duur van uw eSIM-dataplan begint onmiddellijk na voltooiing van uw aankoop. Als u uw mobiele internet liever later wilt activeren, kunt u tijdens uw aankoop "Later activeren" selecteren, waardoor u het binnen de komende 12 maanden kunt activeren.',
-  ],
-  [
-    'question' => 'Kan ik de vervaldatum van mijn huidige eSIM mobiele data-abonnement verlengen?',
-    'answer' => 'Je ontvangt een pushmelding en e-mail wanneer je 70% van je datagebruik bereikt. Op dat moment kun je eenvoudig je :organisationName-account aanvullen via onze app, die verschillende betalingsopties biedt voor jouw gemak.',
-  ],
-  [
-    'question' => 'Heb je een affiliatiesysteem?',
-    'answer' => 'Ja, we bieden een partnerprogramma aan waarmee je commissies kunt verdienen door vrienden, familie of volgers door te verwijzen naar :organisationName. Je kunt meer informatie vinden over ons partnerprogramma in de "Partner" sectie van ons klantenportaal.',
-  ],
-  [
-    'question' => 'Kan ik een terugbetaling krijgen voor diensten van :organisationName?',
-    'answer' => ':organisationName biedt restituties voor eSIM-dataplannen en -top-ups die binnen 30 dagen zijn aangeschaft, mits ze niet zijn gebruikt of verlopen. Ycoins zijn niet-restitueerbaar, tenzij er een bevestigd technisch probleem is. Om een restitutie aan te vragen, neem contact met ons op via info@yesim.app of via het contactformulier in de :organisationName-applicatie, en ons team zal u helpen.',
+    'question' => 'Kan ik de vervaldatum van mijn huidige eSIM mobiele dataplanning verlengen?',
+    'answer' => 'Zeker! Je ontvangt meerdere een pushmeldingen wanneer je bijna door je bundel heen bent. Je kunt via jouw persoonlijke portal eenvoudig opwaarderen.',
   ],
   [
     'question' => 'Kan ik tethering of Persoonlijke Hotspot gebruiken met :organisationName?',
-    'answer' => 'Ja, je kunt je mobiele data delen met andere apparaten met behulp van je :organisationName-profiel. Installeer eenvoudigweg het :organisationName-profiel op je apparaat en schakel Persoonlijke hotspot in bij je instellingen. Deze functie is inbegrepen zonder extra kosten, maar let op dat het gebruik van gedeelde data zal worden afgetrokken van je bundel.',
+    'answer' => 'Ja, je kunt je mobiele data delen met andere apparaten via je :organisationName-eSIM. Installeer eenvoudig het :organisationName-eSIM op je apparaat en schakel Persoonlijke Hotspot in je instellingen in. Deze functie is inbegrepen zonder extra kosten, maar houd er rekening mee dat het gebruik van tethered data van je bundel zal worden afgetrokken.',
   ],
   [
-    'question' => 'Kan ik mijn persoonlijke berichten-app nummers behouden terwijl ik :organisationName\'s eSIM gebruik?',
-    'answer' => 'Ja, je kunt doorgaan met het gebruiken van je WhatsApp, Snapchat, Telegram en andere berichten-apps naast je :organisationName prepaid eSIM zonder enige problemen.',
+    'question' => 'Kan ik mijn persoonlijke berichten-app nummers behouden terwijl ik de eSIM van :organisationName gebruik?',
+    'answer' => 'Ja, je kunt je WhatsApp, Snapchat, Telegram en andere berichtenapps blijven gebruiken naast je :organisationName prepaid eSIM zonder problemen.',
   ],
   [
-    'question' => 'Hoe kan ik mijn eSIM overzetten naar een nieuwe telefoon?',
-    'answer' => 'Voordat je overdraagt, zorg ervoor dat je nieuwe smartphone eSIM-technologie ondersteunt. Neem contact op met ons ondersteuningsteam om een nieuwe eSIM-profiel aan te maken, log vervolgens in op je :organisationName-account op het nieuwe apparaat om de QR-code te installeren. Zorg ervoor dat je een ander apparaat gebruikt om nauwkeurige instellingenupdates te bevestigen.',
+    'question' => 'Hoe kan ik mijn eSIM naar een nieuwe telefoon overzetten?',
+    'answer' => 'Voordat je overdraagt, zorg ervoor dat je nieuwe smartphone eSIM-technologie ondersteunt. Neem contact op met ons ondersteuningsteam om een nieuw eSIM-profiel aan te maken, log vervolgens in op je :organisationName-account op het nieuwe apparaat om de QR-code te installeren. Zorg ervoor dat je bevestigt dat je een ander apparaat gebruikt voor nauwkeurige instellingenupdates.',
   ],
   [
     'question' => 'Zijn er contracten zoals die van traditionele eSIM-aanbieders?',
-    'answer' => 'Nee, :organisationName vereist niet dat u een contract ondertekent. U kunt uw eSIM-kaart naar wens activeren of deactiveren, afhankelijk van uw reisplannen.',
+    'answer' => 'Nee, :organisationName vereist niet dat je contracten ondertekent. Je kunt je eSIM-kaart naar wens activeren of deactiveren, afhankelijk van jouw plannen. We denken graag met je mee.',
   ],
   [
-    'question' => 'Wat is het verschil tussen de eSIM van :organisationName en standaard dataroamingplannen van fysieke mobiele operators?',
-    'answer' => ':organisationName biedt contractvrije dataplannen aan zonder verborgen roamingkosten. Je betaalt alleen voor de data die je gebruikt op basis van het eSIM-plan dat je kiest, wat het een meer economische optie maakt.',
-  ],
-  [
-    'question' => 'Wat is het eerlijke gebruik beleid voor eSIM onbeperkte data abonnementen?',
-    'answer' => 'Om te voldoen aan de behoeften van onze gebruikers, heeft :organisationName onbeperkte dataplannen geïntroduceerd met een Fair Usage Policy (FUP). Na het bereiken van een gespecificeerde datadrempel kan er een snelheidsverlaging van toepassing zijn. Onze onbeperkte plannen omvatten opties voor 7, 15 of 30 dagen. Zelfs nadat de high-speed data is verbruikt, kunnen gebruikers nog steeds onbeperkte data gebruiken voor browsen en e-mailen tegen een verlaagde snelheid.',
+    'question' => 'Wat is het verschil tussen :organisationName\'s eSIM en standaard roaming dataplannen van fysieke mobiele operators?',
+    'answer' => ':organisationName biedt contractvrije dataplannen zonder verborgen roamingkosten. Je betaalt alleen voor de data die je gebruikt, afhankelijk van de bundel dat je kiest, waardoor het vaak een economischere optie is.',
   ],
   [
     'question' => 'Waarom is mijn datasnelheid traag?',
-    'answer' => 'Datasnelheid kan worden beïnvloed door verschillende factoren, waaronder het type smartphone, netwerktechnologie, de websites of apps die je gebruikt, en het tijdstip van de dag. Bovendien kunnen snelheden variëren afhankelijk van de netwerkinfrastructuur van het land. Als je langzame snelheden ervaart, probeer dan je telefoon opnieuw op te starten en deel eventuele snelheidstestresultaten met ons, vooral vergelijkingen met en zonder ingeschakelde LTE-modus.',
+    'answer' => 'Gegevenssnelheid kan worden beïnvloed door verschillende factoren, waaronder het type smartphone dat je hebt, netwerktechnologie, de websites of apps die je gebruikt, en het tijdstip van de dag. Daarnaast kunnen snelheden variëren afhankelijk van de netwerkinfrastructuur van het land. Als je trage snelheden ervaart, probeer dan je telefoon opnieuw op te starten en deel eventuele snelheidsresultaten met ons, vooral vergelijkingen met en zonder LTE-modus ingeschakeld.',
   ],
   [
-    'question' => 'Hoe kan ik mijn datategoed en limieten controleren?',
-    'answer' => 'Je kunt je resterende datagebruik en limieten volgen in de "Internet" sectie van de :organisationName applicatie of door in te loggen op je profiel op onze website, yesim.app.',
+    'question' => 'Hoe kan ik mijn bundels inzien?',
+    'answer' => 'Je kunt je resterende data en limieten volgen in ons klantenpaneel.',
   ],
   [
     'question' => 'Wat maakt :organisationName anders dan andere eSIM-diensten?',
-    'answer' => ':organisationName onderscheidt zich door samen te werken met lokale operators in meer dan 200 landen, waardoor kosteneffectieve databundels zonder tussenpersonen worden aangeboden. We bieden een uitgebreide dekking, virtuele telefoonnummers, geïntegreerde VPN-technologie voor verbeterde beveiliging en een eenvoudig activeringsproces. Met flexibele betalingsopties, onbeperkte databundels en een verwijzingssysteem is :organisationName op maat gemaakt voor reizigers die op zoek zijn naar uitgebreide mobiele internetoplossingen.',
+    'answer' => ':organisationName valt op door samen te werken met lokale operators in meer dan 200 landen, en biedt kosteneffectieve datapakketten zonder tussenpersonen. We bieden robuuste dekking en een eenvoudig activatieproces. :organisationName is perfect voor reizigers die op zoek zijn naar mobiele internetoplossingen.',
   ],
 ];

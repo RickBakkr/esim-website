@@ -5,8 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
@@ -32,6 +31,11 @@ return new class extends Migration
             ['code' => 'USD', 'name' => 'US Dollar', 'symbol' => '$'],
             ['code' => 'CHF', 'name' => 'Swiss Franc', 'symbol' => 'CHF'],
             ['code' => 'GBP', 'name' => 'British Pound', 'symbol' => '£'],
+        ]);
+
+        DB::table('currencies')->insert([
+            ['code' => 'TRY', 'name' => 'Turkish Lira', 'symbol' => '₺'],
+            ['code' => 'RUB', 'name' => 'Russian Ruble', 'symbol' => '₽'],
         ]);
     }
 

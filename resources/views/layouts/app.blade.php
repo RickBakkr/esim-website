@@ -5,17 +5,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        @include('partials.meta')
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.bunny.net/css?family=Rubik:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased bg-gray-100">
         <div class="min-h-screen">
+            <x-banner>
+                <a>
+                    @php($i = 0)
+                    @php($count = count(trans('banner-features')))
+                    @foreach(trans('banner-features') as $feature)
+                        <span class="text-sm text-white">{{ $feature }}</span>
+
+                        @if($i++ < $count-1)
+                        <svg viewBox="0 0 2 2" class="mx-2 inline size-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>
+                        @endif
+                    @endforeach
+                </a>
+            </x-banner>
+
             @include('layouts.navigation')
 
             @isset($header)
@@ -23,7 +37,7 @@
             @endisset
 
             <!-- Page Content -->
-            <main class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <main>
                 {{ $slot }}
             </main>
 

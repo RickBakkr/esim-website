@@ -1,0 +1,98 @@
+/* Webfont: Nohemi-Black */
+@font-face {
+    font-family: 'NohemiBlack';
+    src: url('/resources/fonts/Nohemi-Black.woff') format('woff'), /* Modern Browsers */
+    url('/resources/fonts/Nohemi-Black.woff2') format('woff2'), /* Modern Browsers */
+    url('/resources/fonts/Nohemi-Black.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Nohemi-Bold */
+@font-face {
+    font-family: 'NohemiBold';
+    src: url('/resources/fonts/Nohemi-Bold.woff') format('woff'),
+    url('/resources/fonts/Nohemi-Bold.woff2') format('woff2'),
+    url('/resources/fonts/Nohemi-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Nohemi-ExtraBold */
+@font-face {
+    font-family: 'NohemiExtraBold';
+    src: url('/resources/fonts/Nohemi-ExtraBold.woff') format('woff'),
+    url('/resources/fonts/Nohemi-ExtraBold.woff2') format('woff2'),
+    url('/resources/fonts/Nohemi-ExtraBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 800;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Nohemi-ExtraLight */
+@font-face {
+    font-family: 'NohemiExtraLight';
+    src: url('/resources/fonts/Nohemi-ExtraLight.woff') format('woff'),
+    url('/resources/fonts/Nohemi-ExtraLight.woff2') format('woff2'),
+    url('/resources/fonts/Nohemi-ExtraLight.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 200;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Nohemi-Light */
+@font-face {
+    font-family: 'NohemiLight';
+    src: url('/resources/fonts/Nohemi-Light.woff') format('woff'),
+    url('/resources/fonts/Nohemi-Light.woff2') format('woff2'),
+    url('/resources/fonts/Nohemi-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Nohemi-Medium */
+@font-face {
+    font-family: 'NohemiMedium';
+    src: url('/resources/fonts/Nohemi-Medium.woff') format('woff'),
+    url('/resources/fonts/Nohemi-Medium.woff2') format('woff2'),
+    url('/resources/fonts/Nohemi-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Nohemi-Regular */
+@font-face {
+    font-family: 'NohemiRegular';
+    src: url('/resources/fonts/Nohemi-Regular.woff') format('woff'),
+    url('/resources/fonts/Nohemi-Regular.woff2') format('woff2'),
+    url('/resources/fonts/Nohemi-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Nohemi-SemiBold */
+@font-face {
+    font-family: 'NohemiSemiBold';
+    src: url('/resources/fonts/Nohemi-SemiBold.woff') format('woff'),
+    url('/resources/fonts/Nohemi-SemiBold.woff2') format('woff2'),
+    url('/resources/fonts/Nohemi-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Nohemi-Thin */
+@font-face {
+    font-family: 'NohemiThin';
+    src: url('/resources/fonts/Nohemi-Thin.woff') format('woff'),
+    url('/resources/fonts/Nohemi-Thin.woff2') format('woff2'),
+    url('/resources/fonts/Nohemi-Thin.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 100;
+    text-rendering: optimizeLegibility;
+}

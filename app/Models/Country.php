@@ -14,6 +14,8 @@ class Country extends Model
         'id',
         'code',
         'name',
+        'default_language',
+        'default_currency',
     ];
 
     public function esimBundles() {

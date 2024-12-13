@@ -1,118 +1,148 @@
-<section class="grid grid-cols-1 md:grid-cols-2 gap-8">
-    <div class="bg-white shadow-lg rounded-lg p-6">
-        <h2 class="text-xl font-semibold mb-4">eSIM Details</h2>
-        <div class="flex flex-wrap space-x-6 mb-4">
-            <div class="flex items-center space-x-2">
-                <span>🕒</span>
-                <p>Instant delivery</p>
-            </div>
-            <div class="flex items-center space-x-2">
-                <span>🌐</span>
-                <p>24/7 Support</p>
-            </div>
-            <div class="flex items-center space-x-2">
-                <span>🔒</span>
-                <p>Privacy guaranteed</p>
-            </div>
-            <div class="flex items-center space-x-2">
-                <span>📶</span>
-                <p>The best network</p>
-            </div>
-        </div>
-    </div>
-    <!-- Pricing Section -->
-    <div x-data="{ link: null, price: null }" class="bg-white shadow-lg rounded-lg p-6">
-        <div class="flex justify-between items-center mb-6">
-            <h2 class="text-lg font-semibold">Kies je pakket</h2>
-        </div>
+{{--<div class="self-stretch text-gray-950 text-2xl font-medium leading-loose">--}}
+{{--    {{ trans('sales.local_for', ['countryName' => trans('countries.' . $country->code)]) }}--}}
+{{--</div>--}}
+<div class="justify-start items-start gap-2 w-full">
 
-        @if(count($plans) > 0)
-            <fieldset class="mb-6">
-                <div class="grid grid-cols-3 gap-4">
-                    @foreach($plans as $plan)
-                        @php($random = rand(10000, 100000))
-                        <div class="relative flex items-start">
-                            <div class="flex h-6 items-center">
-                                <input name="chosenPlan" id="{{ $random }}" value="{{ $plan['link'] }}" type="radio"
-                                       x-on:click="link = '{{ $plan['link'] }}', price = '{{ $plan['price'] }}'"
-                                       class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+    @php
+    use App\Models\Currency;$minPrice = null;
+    $highestPrice = null;
+
+    foreach($plans as $plan) {
+        if($minPrice == null || $plan['price_eur'] < $minPrice) {
+            $minPrice = $plan['price_eur'];
+        }
+        if($highestPrice == null || $plan['price_eur'] > $highestPrice) {
+            $highestPrice = $plan['price_eur'];
+        }
+    }
+
+    if(is_null($minPrice)) {
+        $minPrice = 0.00;
+    }
+
+    if(is_null($highestPrice)) {
+        $highestPrice = 0.00;
+    }
+
+    $currency = session()->get(config('session.constants.currency'), 'EUR');
+    if($minPrice > 0 && $currency !== 'EUR') {
+        // convert to currency
+        $minPrice = Currency::getPriceInCurrency($minPrice, $currency);
+    }
+    if($highestPrice > 0 && $currency !== 'EUR') {
+        // convert to currency
+        $highestPrice = Currency::getPriceInCurrency($highestPrice, $currency);
+    }
+
+    @endphp
+
+    <script type="application/ld+json">
+            {"@type":"Product","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","bestRating":"5","worstRating":"1","reviewCount":"276"},"offers":{"@type":"AggregateOffer","offerCount":{{ count($plans) }},"url":"{{ url(request()->getRequestUri()) }}","priceCurrency":"{{ session()->get(config('session.constants.currency'), 'EUR') }}","availability":"OnlineOnly","lowPrice":{{ number_format($minPrice, 2, '.', '') }},"highPrice":{{ number_format($highestPrice, 2, '.', '') }}}
+    </script>
+
+    @if(count($plans) > 0)
+    @php($topPlanSet = false)
+    @foreach($plans as $plan)
+        @php($random = rand(10000, 100000))
+        <div
+            class="w-full p-4 mb-1 bg-white rounded-xl shadow border flex-col justify-start items-start gap-3.5 flex cursor-pointer"
+            x-on:click="id = '{{ $plan['id'] }}'">
+            <div class="self-stretch justify-start items-start gap-3.5 inline-flex">
+                <div class="grow shrink basis-0 flex-col justify-start items-start gap-1 inline-flex">
+                    <div class="self-stretch justify-start items-center gap-1 inline-flex">
+                        <div class="text-[] text-md font-medium leading-tight">{{ $plan['name'] }}</div>
+                        @if(!$topPlanSet && $plan['price_eur'] > 10)
+                            @php($topPlanSet = true)
+                            <div
+                                class="px-2 py-0.5 bg-red-200 rounded-[999px] justify-center items-center flex ml-2">
+                                <div
+                                    class="text-center text-red-500 text-[11px] font-medium uppercase leading-3 tracking-tight">
+                                    {{ trans('sales.top_plan') }}
+                                </div>
                             </div>
-                            <div class="ml-3 text-sm/6">
-                                <label for="{{ $random }}" class="font-medium text-gray-900">{{ $plan['name'] }}</label>
-                                <p id="small-description" class="text-gray-500">
-                                    {{ $plan['price'] }} / {{ $plan['days_valid'] }} {{ trans('sales.days') }}
+                        @endif
+                    </div>
+{{--                    <div--}}
+{{--                        class="self-stretch text-gray-600 text-xs font-normal leading-none">{{ $plan['price'] }}--}}
+{{--                        / {{ $plan['days_valid'] }} {{ trans('sales.days') }}</div>--}}
+                </div>
+                <div class="text-gray-950 text-md font-medium leading-tight">{{ $plan['price'] }}</div>
+            </div>
+
+            <div x-show="id === '{{ $plan['id'] }}'" class="w-full">
+
+                <div class="my-4 flex-col justify-start items-start gap-2">
+                    <div class="text-gray-950 text-sm font-medium leading-tight">
+                        {{ trans('sales.all_features') }}
+                    </div>
+                    <div class="flex-col justify-start items-start gap-3 flex mt-4">
+                        <div class="justify-start items-center gap-2 inline-flex">
+                            <div class="w-4 h-4 relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z" />
+                                </svg>
+                            </div>
+                            <div class="text-gray-600 text-xs font-normal leading-none">
+                                <p>{{ trans('sales.features.feature_one') }}</p>
+                            </div>
+                        </div>
+                        <div class="justify-start items-center gap-2 inline-flex">
+                            <div class="w-4 h-4 relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4">
+                                    <rect x="6" y="2" width="12" height="20" rx="2" ry="2" stroke="currentColor"></rect>
+                                    <path d="M9 8h6v8H9z"></path>
+                                    <path d="M9 14h2v2H9zM13 14h2v2h-2zM9 10h2v2H9zM13 10h2v2h-2z"></path>
+                                </svg>
+                            </div>
+                            <div class="text-gray-600 text-xs font-normal leading-none">
+                                <p>{{ trans('sales.features.feature_two') }}</p>
+                                <p class="mt-2">
+                                    @php($roamingNetworks = config('roaming-networks.' . strtoupper($country->code)))
+                                    @php($roamingNetworks = $roamingNetworks ?? [])
+                                    @foreach($roamingNetworks as $network)
+                                        <a href="{{ $network['link'] }}" target="_blank" class="text-red-800 hover:text-red-500 pr-4">
+                                            {{ $network['name'] }}
+                                        </a>
+                                    @endforeach
                                 </p>
                             </div>
                         </div>
-                    @endforeach
-                </div>
-            </fieldset>
-
-            <div class="space-x-2 mb-4" x-show="link !== null">
-                <p class="text-3xl font-bold"><span x-text="price ? price : '-'"></span></p>
-
-                <br/>
-
-                <button x-on:click="window.location = link" class="bg-black text-white px-6 py-2 rounded-lg">
-                    Buy Now
-                </button>
-            </div>
-        @else
-            <div class="rounded-md bg-yellow-50 p-4">
-                <div class="flex">
-                    <div class="flex-shrink-0">
-                        <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                            <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
-                        </svg>
-                    </div>
-                    <div class="ml-3">
-                        <h3 class="text-sm font-medium text-yellow-800">
-                            {{ trans('sales.not_available_yet') }}
-                        </h3>
-                        <div class="mt-2 text-sm text-yellow-700">
-                            <p>
-                                {{ trans('sales.not_available_yet_contact_us') }}
-                            </p>
+                        <div class="justify-start items-center gap-2 inline-flex">
+                            <div class="w-4 h-4 relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a2.25 2.25 0 0 0-2.25-2.25H15a3 3 0 1 1-6 0H5.25A2.25 2.25 0 0 0 3 12m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 9m18 0V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3" />
+                                </svg>
+                            </div>
+                            <div class="text-gray-600 text-xs font-normal leading-none">
+                                {{ trans('sales.features.feature_three') }}
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <a href="{{ $plan['link'] }}" target="_blank">
+                    <button type="button" class="w-full rounded-md bg-red-500 hover:bg-red-300 focus-visible:outline-red-200 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+                    {{ trans('sales.buy_now') }}
+                    </button>
+                </a>
+
             </div>
-        @endif
-    </div>
-</section>
-
-<!-- Works In Other Countries Section -->
-<section class="container mx-auto p-6 md:p-10">
-    <h2 class="text-xl font-semibold mb-4">eSIM also works in</h2>
-    <div class="flex flex-wrap gap-2">
-        <span class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full">Greece</span>
-        <span class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full">Finland</span>
-        <!-- Add other countries as needed -->
-    </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="container mx-auto p-6 md:p-10">
-    <h2 class="text-xl font-semibold mb-4">Common Questions</h2>
-    <div class="space-y-4">
-        <div class="border-b">
-            <button class="w-full flex justify-between items-center text-left py-2">
-                <span>What is an eSIM?</span>
-                <span>+</span>
-            </button>
         </div>
-        <!-- Add other FAQs as needed -->
-    </div>
-</section>
-
-<!-- Footer Section -->
-<footer class="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-10">
-    <div class="container mx-auto text-center">
-        <h3 class="text-lg font-semibold mb-4">Ready for Your Next Trip?</h3>
-        <p class="mb-6">Ensure seamless connectivity abroad with NoLimit's reliable data plan...</p>
-        <button class="bg-black text-white px-6 py-2 rounded-lg">Get Your Data Plan</button>
-    </div>
-    <div class="container mx-auto mt-10 text-center text-sm">
-        <p>&copy; 2024 NoLimit Inc. All rights reserved.</p>
-    </div>
-</footer>
+    @endforeach
+    @else
+        <div class="rounded-md bg-yellow-50 p-4">
+            <div class="flex">
+                <div class="shrink-0">
+                    <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="ml-3">
+                    <h3 class="text-sm font-medium text-yellow-800">
+                        {{ trans('sales.not_available_yet_contact_us') }}
+                    </h3>
+                </div>
+            </div>
+        </div>
+    @endif
+</div>
