@@ -12,6 +12,7 @@ class SetLocaleMiddleware
     public function handle($request, Closure $next)
     {
         $locale = $request->segment(1);
+        $ip = $request->header('X-Real-IP') ?? $request->ip();
 
         if (!is_null($locale)) {
             if (is_dir(base_path('lang/' . $locale))) {
@@ -29,7 +30,6 @@ class SetLocaleMiddleware
         } else {
             $locale = config('app.fallback_locale');
 
-            $ip = $request->ip();
             $geoJs = file_get_contents('https://get.geojs.io/v1/ip/country.json?ip=' . $ip);
             $geo = json_decode($geoJs);
 
