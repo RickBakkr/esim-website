@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
 
             $table->string('code');
-            $table->string('name'); // english
+            $table->string('name')->default('Country');
 
             $table->timestamps();
         });
