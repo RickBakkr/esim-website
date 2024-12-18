@@ -17,7 +17,7 @@
 
     <x-slot name="content">
         @foreach(getLanguages() as $code => $language)
-            <x-dropdown-link :href="getRoute(request()->route()->getName(), request()->route()->parameters(), $language)">
+            <x-dropdown-link :href="getRoute(request()->route()->getName(), request()->route()->parameters(), $code)">
                 {{ $language }}
             </x-dropdown-link>
         @endforeach
