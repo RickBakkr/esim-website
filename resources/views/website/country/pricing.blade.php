@@ -50,7 +50,9 @@
             <div class="self-stretch justify-start items-start gap-3.5 inline-flex">
                 <div class="grow shrink basis-0 flex-col justify-start items-start gap-1 inline-flex">
                     <div class="self-stretch justify-start items-center gap-1 inline-flex">
-                        <div class="text-[] text-md font-medium leading-tight">{{ $plan['name'] }}</div>
+                        <div class="text-[] text-md font-medium leading-tight">
+                            {{ $plan['name'] }} - {{ $plan['days_valid'] }} {{ trans('sales.days') }}
+                        </div>
                         @if(!$topPlanSet && $plan['price_eur'] > 10)
                             @php($topPlanSet = true)
                             <div

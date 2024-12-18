@@ -40,12 +40,29 @@ function getRoute($name, $params = [], $locale = null) {
 }
 
 function getLanguages() {
-    $languages = glob(base_path('lang/*'), GLOB_ONLYDIR);
-    $languages = array_map(function($lang) {
-        return basename($lang);
-    }, $languages);
+    $config = config('languages');
 
-    return $languages;
+    $languages = glob(base_path('lang/*'), GLOB_ONLYDIR);
+    $langaugesArray = [];
+
+    foreach($languages as $lang) {
+        if(array_key_exists(basename($lang), $config)) {
+            $langConfig = $config[basename($lang)];
+            $name = $langConfig['name_native'];
+
+            if(!is_null($langConfig['name_english'])) {
+                $name .= ' (' . $langConfig['name_english'] . ')';
+            }
+
+            $name .= ' ' . $langConfig['emoji'];
+
+            $langaugesArray[basename($lang)] = $name;
+        } else {
+            $langaugesArray[basename($lang)] = strtoupper(basename($lang));
+        }
+    }
+
+    return $langaugesArray;
 }
 
 function getSupportedNetworks() {

@@ -21,7 +21,7 @@
                 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-MHGQPXWK');</script>
         <!-- End Google Tag Manager -->
-        
+
     </head>
     <body class="font-sans antialiased bg-gray-100">
         <div class="min-h-screen">

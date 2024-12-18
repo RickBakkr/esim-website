@@ -5,6 +5,13 @@
                 <a href="{{ getRoute('home') }}" class="text-gray-600 hover:text-gray-900">
                     {{ config('seo.name') }}
                 </a>
+
+                <div class="mt-6 text-sm/6 text-gray-600">
+                    <p>{{ config('address.name') }}</p>
+                    @foreach(config('address.lines') as $line)
+                        <p>{{ $line }}</p>
+                    @endforeach
+                </div>
             </div>
             <nav class="flex space-x-6 text-sm/6 mt-12 sm:mt-0" aria-label="Footer">
                 <a href="{{ getRoute('supported-devices') }}" class="text-gray-600 hover:text-gray-900">{{ trans('navigation.supported-devices') }}</a>
