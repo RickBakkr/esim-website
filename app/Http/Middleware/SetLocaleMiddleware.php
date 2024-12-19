@@ -15,7 +15,7 @@ class SetLocaleMiddleware
         $ip = $request->header('X-Real-IP') ?? $request->ip();
 
         if (!is_null($locale)) {
-            if (is_dir(base_path('lang/' . $locale))) {
+            if (languagePossible($locale)) {
                 App::setLocale($locale);
             } else {
                 if (strlen($locale) != 2) {
@@ -42,7 +42,7 @@ class SetLocaleMiddleware
                 if ($country) {
                     // set locale
                     $defaultLanguage = $country->default_language;
-                    if (is_dir(base_path('lang/' . $defaultLanguage))) {
+                    if (languagePossible($defaultLanguage)) {
                         $locale = $defaultLanguage;
                     }
                 }
