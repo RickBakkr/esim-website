@@ -69,7 +69,7 @@ return [
   [
     'stars' => 5,
     'name' => 'Janette',
-    'message' => 'Erinomainen palvelu, ongelma ratkaistiin nopeasti uudella :sim.',
+    'message' => 'Erinomainen palvelu, ongelma ratkaistiin nopeasti uudella sim.',
     'flag' => 'NL',
     'short_message' => 'Erinomainen palvelu',
   ],

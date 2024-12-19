@@ -69,7 +69,7 @@ return [
   [
     'stars' => 5,
     'name' => 'Janette',
-    'message' => 'Kiváló szolgáltatás, a problémát gyorsan megoldották az új :sim segítségével.',
+    'message' => 'Kiváló szolgáltatás, a problémát gyorsan megoldották az új sim segítségével.',
     'flag' => 'NL',
     'short_message' => 'Kiváló szolgáltatás',
   ],
