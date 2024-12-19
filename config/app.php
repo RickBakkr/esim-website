@@ -123,4 +123,17 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Theme
+    |--------------------------------------------------------------------------
+    |
+    | This value determines the theme of your application, which will be used.
+    | The theme is set to "default" by default as it is suitable for most use cases.
+    | Set this in your ".env" file (APP_THEME) to change the theme of your application.
+    |
+    | Resolves to resources/views/{theme}/...
+    |
+    */
+    'theme' => env('APP_THEME', 'default'),
 ];
