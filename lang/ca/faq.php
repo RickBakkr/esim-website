@@ -49,7 +49,7 @@ return [
   ],
   [
     'question' => 'Per què és lenta la meva velocitat de dades?',
-    'answer' => 'La velocitat de dades pot ser afectada per diversos factors, incloent el tipus d\'smartphone que tens, la tecnologia de xarxa, els llocs web o aplicacions que utilitzes, i l\'hora del dia. A més, les velocitats poden variar segons la infraestructura de xarxa del país. Si estàs experimentant velocitats lentes, prova a reiniciar el teu telèfon i comparteix amb nosaltres qualsevol resultat de velocitat, especialment comparacions amb i sense :LTE mode habilitat.',
+    'answer' => 'La velocitat de dades pot ser afectada per diversos factors, incloent el tipus d\'smartphone que tens, la tecnologia de xarxa, els llocs web o aplicacions que utilitzes, i l\'hora del dia. A més, les velocitats poden variar segons la infraestructura de xarxa del país. Si estàs experimentant velocitats lentes, prova a reiniciar el teu telèfon i comparteix amb nosaltres qualsevol resultat de velocitat, especialment comparacions amb i sense LTE mode habilitat.',
   ],
   [
     'question' => 'Com puc veure els meus paquets?',

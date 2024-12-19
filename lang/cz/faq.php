@@ -49,7 +49,7 @@ return [
   ],
   [
     'question' => 'Proč je moje rychlost dat pomalá?',
-    'answer' => 'Rychlost dat může být ovlivněna různými faktory, včetně typu smartphonu, který máte, technologiemi sítě, webovými stránkami nebo aplikacemi, které používáte, a denní dobou. Kromě toho se rychlosti mohou lišit v závislosti na síťové infrastruktuře země. Pokud zažíváte pomalé rychlosti, zkuste restartovat svůj telefon a sdílejte s námi jakékoli výsledky rychlosti, zejména srovnání s a bez :LTE režimu.',
+    'answer' => 'Rychlost dat může být ovlivněna různými faktory, včetně typu smartphonu, který máte, technologiemi sítě, webovými stránkami nebo aplikacemi, které používáte, a denní dobou. Kromě toho se rychlosti mohou lišit v závislosti na síťové infrastruktuře země. Pokud zažíváte pomalé rychlosti, zkuste restartovat svůj telefon a sdílejte s námi jakékoli výsledky rychlosti, zejména srovnání s a bez LTE režimu.',
   ],
   [
     'question' => 'Jak mohu zobrazit své balíčky?',

@@ -49,7 +49,7 @@ return [
   ],
   [
     'question' => 'De ce este lentă viteza mea de date?',
-    'answer' => 'Viteza de date poate fi afectată de diversi factori, inclusiv tipul de smartphone pe care îl ai, tehnologia rețelei, site-urile web sau aplicațiile pe care le folosești și ora din zi. În plus, vitezele pot varia în funcție de infrastructura rețelei din țară. Dacă experimentezi viteze lente, încearcă să îți repornești telefonul și împărtășește-ne orice rezultate de viteză, în special comparații cu și fără :LTE activat.',
+    'answer' => 'Viteza de date poate fi afectată de diversi factori, inclusiv tipul de smartphone pe care îl ai, tehnologia rețelei, site-urile web sau aplicațiile pe care le folosești și ora din zi. În plus, vitezele pot varia în funcție de infrastructura rețelei din țară. Dacă experimentezi viteze lente, încearcă să îți repornești telefonul și împărtășește-ne orice rezultate de viteză, în special comparații cu și fără LTE activat.',
   ],
   [
     'question' => 'Cum pot vizualiza pachetele mele?',

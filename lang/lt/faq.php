@@ -49,7 +49,7 @@ return [
   ],
   [
     'question' => 'Kodėl mano duomenų greitis lėtas?',
-    'answer' => 'Duomenų greitį gali paveikti įvairūs veiksniai, įskaitant turimą išmanųjį telefoną, tinklo technologiją, svetaines ar programas, kurias naudojate, ir paros laiką. Be to, greičiai gali skirtis priklausomai nuo šalies tinklo infrastruktūros. Jei patiriate lėtą greitį, pabandykite perkrauti savo telefoną ir pasidalykite bet kokiais greičio rezultatais su mumis, ypač palyginimais su ir be :LTE režimo.',
+    'answer' => 'Duomenų greitį gali paveikti įvairūs veiksniai, įskaitant turimą išmanųjį telefoną, tinklo technologiją, svetaines ar programas, kurias naudojate, ir paros laiką. Be to, greičiai gali skirtis priklausomai nuo šalies tinklo infrastruktūros. Jei patiriate lėtą greitį, pabandykite perkrauti savo telefoną ir pasidalykite bet kokiais greičio rezultatais su mumis, ypač palyginimais su ir be LTE režimo.',
   ],
   [
     'question' => 'Kaip galiu peržiūrėti savo bundles?',

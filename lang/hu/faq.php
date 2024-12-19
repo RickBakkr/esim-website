@@ -49,7 +49,7 @@ return [
   ],
   [
     'question' => 'Miért lassú az adatsebességem?',
-    'answer' => 'Az adatsebességet különböző tényezők befolyásolhatják, beleértve a használt okostelefon típusát, a hálózati technológiát, a weboldalakat vagy alkalmazásokat, amelyeket használ, és a napszakot. Ezenkívül a sebességek változhatnak az ország hálózati infrastruktúrájától függően. Ha lassú sebességet tapasztalsz, próbáld meg újraindítani a telefonodat, és oszd meg velünk a sebességi eredményeket, különösen a :LTE mód engedélyezett és nem engedélyezett összehasonlításait.',
+    'answer' => 'Az adatsebességet különböző tényezők befolyásolhatják, beleértve a használt okostelefon típusát, a hálózati technológiát, a weboldalakat vagy alkalmazásokat, amelyeket használ, és a napszakot. Ezenkívül a sebességek változhatnak az ország hálózati infrastruktúrájától függően. Ha lassú sebességet tapasztalsz, próbáld meg újraindítani a telefonodat, és oszd meg velünk a sebességi eredményeket, különösen a LTE mód engedélyezett és nem engedélyezett összehasonlításait.',
   ],
   [
     'question' => 'Hogyan nézhetem meg a csomagjaimat?',

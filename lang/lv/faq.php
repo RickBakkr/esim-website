@@ -49,7 +49,7 @@ return [
   ],
   [
     'question' => 'Kāpēc mana datu ātrums ir lēns?',
-    'answer' => 'Datu ātrumu var ietekmēt dažādi faktori, tostarp jūsu izmantotā viedtālruņa veids, tīkla tehnoloģija, vietnes vai lietotnes, ko izmantojat, un diennakts laiks. Turklāt ātrumi var atšķirties atkarībā no valsts tīkla infrastruktūras. Ja jūs piedzīvojat lēnus ātrumus, mēģiniet restartēt savu tālruni un dalieties ar jebkādiem ātruma rezultātiem ar mums, īpaši salīdzinājumos ar un bez :LTE režīma aktivizēšanas.',
+    'answer' => 'Datu ātrumu var ietekmēt dažādi faktori, tostarp jūsu izmantotā viedtālruņa veids, tīkla tehnoloģija, vietnes vai lietotnes, ko izmantojat, un diennakts laiks. Turklāt ātrumi var atšķirties atkarībā no valsts tīkla infrastruktūras. Ja jūs piedzīvojat lēnus ātrumus, mēģiniet restartēt savu tālruni un dalieties ar jebkādiem ātruma rezultātiem ar mums, īpaši salīdzinājumos ar un bez LTE režīma aktivizēšanas.',
   ],
   [
     'question' => 'Kā es varu skatīt savus bundles?',

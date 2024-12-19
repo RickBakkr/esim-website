@@ -49,7 +49,7 @@ return [
   ],
   [
     'question' => 'Miks on minu andmeedastuskiirus aeglane?',
-    'answer' => 'Andmeside kiirus võib olla mõjutatud erinevatest teguritest, sealhulgas teie nutitelefoni tüübist, võrgu tehnoloogiast, kasutatavatest veebisaitidest või rakendustest ning päevaajast. Lisaks võivad kiirused varieeruda sõltuvalt riigi võrgu infrastruktuurist. Kui te kogete aeglaseid kiirusid, proovige oma telefoni taaskäivitada ja jagage meiega kõiki kiirusetulemusi, eriti võrreldes :LTE režiimi lubamisega ja ilma.',
+    'answer' => 'Andmeside kiirus võib olla mõjutatud erinevatest teguritest, sealhulgas teie nutitelefoni tüübist, võrgu tehnoloogiast, kasutatavatest veebisaitidest või rakendustest ning päevaajast. Lisaks võivad kiirused varieeruda sõltuvalt riigi võrgu infrastruktuurist. Kui te kogete aeglaseid kiirusid, proovige oma telefoni taaskäivitada ja jagage meiega kõiki kiirusetulemusi, eriti võrreldes LTE režiimi lubamisega ja ilma.',
   ],
   [
     'question' => 'Kuidas ma saan oma pakette vaadata?',

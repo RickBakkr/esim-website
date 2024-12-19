@@ -49,7 +49,7 @@ return [
   ],
   [
     'question' => 'Hvorfor er min datahastighed langsom?',
-    'answer' => 'Datahastigheden kan påvirkes af forskellige faktorer, herunder hvilken type smartphone du har, netværksteknologi, de websteder eller apps du bruger, og tidspunktet på dagen. Derudover kan hastigheder variere afhængigt af netværksinfrastrukturen i landet. Hvis du oplever langsomme hastigheder, så prøv at genstarte din telefon og del eventuelle hastighedsresultater med os, især sammenligninger med og uden :LTE-tilstand aktiveret.',
+    'answer' => 'Datahastigheden kan påvirkes af forskellige faktorer, herunder hvilken type smartphone du har, netværksteknologi, de websteder eller apps du bruger, og tidspunktet på dagen. Derudover kan hastigheder variere afhængigt af netværksinfrastrukturen i landet. Hvis du oplever langsomme hastigheder, så prøv at genstarte din telefon og del eventuelle hastighedsresultater med os, især sammenligninger med og uden LTE-tilstand aktiveret.',
   ],
   [
     'question' => 'Hvordan kan jeg se mine bundter?',

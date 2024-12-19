@@ -49,7 +49,7 @@ return [
   ],
   [
     'question' => 'Dlaczego moja prędkość danych jest wolna?',
-    'answer' => 'Prędkość danych może być wpływana przez różne czynniki, w tym typ smartfona, który posiadasz, technologię sieciową, strony internetowe lub aplikacje, z których korzystasz, oraz porę dnia. Ponadto prędkości mogą się różnić w zależności od infrastruktury sieciowej w danym kraju. Jeśli doświadczasz wolnych prędkości, spróbuj zrestartować swój telefon i podziel się z nami wynikami prędkości, szczególnie porównaniami z włączonym i wyłączonym :LTE.',
+    'answer' => 'Prędkość danych może być wpływana przez różne czynniki, w tym typ smartfona, który posiadasz, technologię sieciową, strony internetowe lub aplikacje, z których korzystasz, oraz porę dnia. Ponadto prędkości mogą się różnić w zależności od infrastruktury sieciowej w danym kraju. Jeśli doświadczasz wolnych prędkości, spróbuj zrestartować swój telefon i podziel się z nami wynikami prędkości, szczególnie porównaniami z włączonym i wyłączonym LTE.',
   ],
   [
     'question' => 'Jak mogę zobaczyć moje pakiety?',

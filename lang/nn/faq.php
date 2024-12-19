@@ -49,7 +49,7 @@ return [
   ],
   [
     'question' => 'Kvifor er datahastigheita mi låg?',
-    'answer' => 'Datahastighet kan bli påverka av ulike faktorar, inkludert typen smarttelefon du har, nettverksteknologi, nettsidene eller appane du bruker, og tida på dagen. I tillegg kan hastigheiter variere avhengig av nettverksinfrastrukturen i landet. Dersom du opplever låg hastighet, prøv å starte telefonen på nytt og del eventuelle hastigheitsresultat med oss, spesielt samanlikningar med og utan :LTE-modus aktivert.',
+    'answer' => 'Datahastighet kan bli påverka av ulike faktorar, inkludert typen smarttelefon du har, nettverksteknologi, nettsidene eller appane du bruker, og tida på dagen. I tillegg kan hastigheiter variere avhengig av nettverksinfrastrukturen i landet. Dersom du opplever låg hastighet, prøv å starte telefonen på nytt og del eventuelle hastigheitsresultat med oss, spesielt samanlikningar med og utan LTE-modus aktivert.',
   ],
   [
     'question' => 'Korleis kan eg sjå mine pakkar?',

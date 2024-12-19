@@ -49,7 +49,7 @@ return [
   ],
   [
     'question' => 'Miksi tietoni nopeus on hidas?',
-    'answer' => 'Tietojen nopeuteen voivat vaikuttaa erilaiset tekijät, mukaan lukien älypuhelimesi tyyppi, verkko- ja teknologia, käyttämäsi verkkosivustot tai sovellukset sekä vuorokauden aika. Lisäksi nopeudet voivat vaihdella maan verkoinfrastruktuurin mukaan. Jos koet hitaita nopeuksia, yritä käynnistää puhelimesi uudelleen ja jaa kanssamme kaikki nopeustulokset, erityisesti vertailut :LTE-tilan ollessa päällä ja pois päältä.',
+    'answer' => 'Tietojen nopeuteen voivat vaikuttaa erilaiset tekijät, mukaan lukien älypuhelimesi tyyppi, verkko- ja teknologia, käyttämäsi verkkosivustot tai sovellukset sekä vuorokauden aika. Lisäksi nopeudet voivat vaihdella maan verkoinfrastruktuurin mukaan. Jos koet hitaita nopeuksia, yritä käynnistää puhelimesi uudelleen ja jaa kanssamme kaikki nopeustulokset, erityisesti vertailut LTE-tilan ollessa päällä ja pois päältä.',
   ],
   [
     'question' => 'Kuinka voin tarkastella pakettejani?',

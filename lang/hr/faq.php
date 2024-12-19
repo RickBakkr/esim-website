@@ -49,7 +49,7 @@ return [
   ],
   [
     'question' => 'Zašto je moja brzina podataka spora?',
-    'answer' => 'Brzina podataka može biti pogođena raznim faktorima, uključujući vrstu pametnog telefona koji imate, mrežnu tehnologiju, web stranice ili aplikacije koje koristite, te doba dana. Osim toga, brzine se mogu razlikovati ovisno o mrežnoj infrastrukturi zemlje. Ako doživljavate spore brzine, pokušajte ponovno pokrenuti svoj telefon i podijelite s nama rezultate brzine, posebno usporedbe s :LTE načinom uključenim i isključenim.',
+    'answer' => 'Brzina podataka može biti pogođena raznim faktorima, uključujući vrstu pametnog telefona koji imate, mrežnu tehnologiju, web stranice ili aplikacije koje koristite, te doba dana. Osim toga, brzine se mogu razlikovati ovisno o mrežnoj infrastrukturi zemlje. Ako doživljavate spore brzine, pokušajte ponovno pokrenuti svoj telefon i podijelite s nama rezultate brzine, posebno usporedbe s LTE načinom uključenim i isključenim.',
   ],
   [
     'question' => 'Kako mogu pregledati svoje pakete?',
