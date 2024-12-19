@@ -9,7 +9,11 @@
         </div>
         <div class="justify-start items-center gap-4 flex">
             <div class="w-8 h-8 relative">
-                <img src="{{ asset('images/flags/' . strtolower($flag) . '.svg') }}" alt="{{ trans('countries.' . strtoupper($flag)) }}" class="w-full h-full object-contain">
+                @if(file_exists(public_path('images/flags/' . strtolower($flag) . '.svg')))
+                    <img src="{{ asset('images/flags/' . strtolower($flag) . '.svg') }}" alt="{{ trans('countries.' . strtoupper($flag)) }}" class="w-full h-full object-contain">
+                @else
+                    <img src="{{ asset('images/flags/EU.svg') }}" alt="{{ trans('countries.' . 'EU') }}" class="w-full h-full object-contain">
+                @endif
             </div>
             <div class="flex-col justify-start items-start inline-flex">
                 <div class="text-slate-600 text-lg font-medium leading-normal">{{ $name }}</div>

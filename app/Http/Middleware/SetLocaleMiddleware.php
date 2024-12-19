@@ -48,13 +48,15 @@ class SetLocaleMiddleware
                 }
 
                 $sessionKey = config('session.constants.currency');
-                // set currency session
-                $defaultCurrency = $country->default_currency;
-                $currency = Currency::where('code', strtoupper($defaultCurrency))->first();
-                if ($currency) {
-                    session([$sessionKey => $currency->code]);
+                // check if session is set, else resolve it;
+                if(!session()->has($sessionKey)) {
+                    // set currency session
+                    $defaultCurrency = $country->default_currency;
+                    $currency = Currency::where('code', strtoupper($defaultCurrency))->first();
+                    if ($currency) {
+                        session([$sessionKey => $currency->code]);
+                    }
                 }
-
             }
 
             App::setLocale($locale);

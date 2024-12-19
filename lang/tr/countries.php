@@ -253,4 +253,5 @@ return [
   'ZA' => 'Güney Afrika',
   'ZM' => 'Zambiya',
   'ZW' => 'Zimbabve',
+  'EU' => 'Avrupa',
 ];
