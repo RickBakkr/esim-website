@@ -1,5 +1,7 @@
 <?php
 return [
+    'limit' => explode(',', env('LIMIT_LANGUAGES')),
+
     'ar' => [
         'name_native' => 'العربية',
         'name_english' => 'Arabic',

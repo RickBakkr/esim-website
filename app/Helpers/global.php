@@ -46,6 +46,10 @@ function getLanguages() {
     $langaugesArray = [];
 
     foreach($languages as $lang) {
+        if(!languagePossible(basename($lang))) {
+            continue;
+        }
+
         if(array_key_exists(basename($lang), $config)) {
             $langConfig = $config[basename($lang)];
             $name = $langConfig['name_native'];
@@ -106,4 +110,19 @@ function slug(string $input) {
 function getTranslationParameters($translation) {
     preg_match_all('/:(\w+)/', $translation, $matches);
     return $matches[0];
+}
+
+function languagePossible($language) {
+    $language = trim($language);
+    $limits = config('languages.limit');
+
+    if(!is_dir(base_path('lang/' . $language))) {
+        return false;
+    }
+
+    if(empty($limits) || trim(implode($limits)) == '') {
+        return true;
+    }
+
+    return in_array($language, $limits);
 }

@@ -1,3 +1,5 @@
+@php($languages = getLanguages())
+@if(count($languages) > 1)
 <x-dropdown align="right" width="w-64" contentClasses="py-1 bg-white max-h-96 overflow-y-auto">
     <x-slot name="trigger">
         <button
@@ -16,10 +18,11 @@
     </x-slot>
 
     <x-slot name="content">
-        @foreach(getLanguages() as $code => $language)
+        @foreach($languages as $code => $language)
             <x-dropdown-link :href="getRoute(request()->route()->getName(), request()->route()->parameters(), $code)">
                 {{ $language }}
             </x-dropdown-link>
         @endforeach
     </x-slot>
 </x-dropdown>
+@endif
