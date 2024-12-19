@@ -33,7 +33,7 @@
 
                 @include('partials.language-nav')
 
-                <x-nav-link :href="env('MIJN_GOSIM_URL')" target="_blank" class="hover:border-b-0">
+                <x-nav-link :href="env('MIJN_GOSIM_URL') . '?lang=' . app()->getLocale()" target="_blank" class="hover:border-b-0">
 
                     <button type="button" class="rounded-md bg-red-300 hover:bg-red-500 focus-visible:outline-red-200 px-3 py-1.5 text-sm font-semibold leading-6 text-gray-800 shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 transition ease-in-out duration-150 gap-2 w-full">
                         {{ trans('navigation.portal_link', ['organisationName' => config('app.name')]) }}
@@ -75,7 +75,7 @@
                 {{ trans('navigation.about') }}
             </x-responsive-nav-link>
 
-            <x-responsive-nav-link :href="env('MIJN_GOSIM_URL')" target="_blank">
+            <x-responsive-nav-link :href="env('MIJN_GOSIM_URL') . '?lang=' . app()->getLocale()" target="_blank">
                 {{ trans('navigation.portal_link', ['organisationName' => config('app.name')]) }}
             </x-responsive-nav-link>
 

@@ -1,4 +1,4 @@
-<x-dropdown align="right" width="48">
+<x-dropdown align="right" width="w-full" alignmentClasses="ltr:origin-top-right rtl:origin-top-left end-0 mt-0 border-t-none" contentClasses="py-1 bg-white max-h-96 overflow-y-auto">
     <x-slot name="trigger">
         <button
             class="block w-full bg-lime-100 ps-3 pe-4 py-2 border-l-4 border-transparent text-start text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out flex">
