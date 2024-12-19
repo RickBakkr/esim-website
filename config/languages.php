@@ -40,7 +40,7 @@ return [
         'name_english' => 'Croatian',
         'emoji' => '🇭🇷',
     ],
-    'cs' => [
+    'cz' => [
         'name_native' => 'Čeština',
         'name_english' => 'Czech',
         'emoji' => '🇨🇿',
@@ -180,7 +180,7 @@ return [
         'name_english' => 'Turkish',
         'emoji' => '🇹🇷',
     ],
-    'uk' => [
+    'ua' => [
         'name_native' => 'Українська',
         'name_english' => 'Ukrainian',
         'emoji' => '🇺🇦',

@@ -49,7 +49,7 @@ return [
   ],
   [
     'question' => 'Varför är min datatakt långsam?',
-    'answer' => 'Datahastighet kan påverkas av olika faktorer, inklusive typen av smartphone du har, nätverksteknologi, de webbplatser eller appar du använder, och tidpunkten på dagen. Dessutom kan hastigheterna variera beroende på nätverksinfrastrukturen i landet. Om du upplever långsamma hastigheter, försök att starta om din telefon och dela eventuella hastighetsresultat med oss, särskilt jämförelser med och utan :LTE-läge aktiverat.',
+    'answer' => 'Datahastighet kan påverkas av olika faktorer, inklusive typen av smartphone du har, nätverksteknologi, de webbplatser eller appar du använder, och tidpunkten på dagen. Dessutom kan hastigheterna variera beroende på nätverksinfrastrukturen i landet. Om du upplever långsamma hastigheter, försök att starta om din telefon och dela eventuella hastighetsresultat med oss, särskilt jämförelser med och utan LTE-läge aktiverat.',
   ],
   [
     'question' => 'Hur kan jag se mina paket?',

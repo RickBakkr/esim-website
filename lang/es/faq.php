@@ -49,7 +49,7 @@ return [
   ],
   [
     'question' => '¿Por qué es lenta la velocidad de mis datos?',
-    'answer' => 'La velocidad de los datos puede verse afectada por varios factores, incluyendo el tipo de smartphone que tienes, la tecnología de red, los sitios web o aplicaciones que usas, y la hora del día. Además, las velocidades pueden variar dependiendo de la infraestructura de red del país. Si estás experimentando velocidades lentas, intenta reiniciar tu teléfono y comparte con nosotros cualquier resultado de velocidad, especialmente comparaciones con y sin :LTE mode habilitado.',
+    'answer' => 'La velocidad de los datos puede verse afectada por varios factores, incluyendo el tipo de smartphone que tienes, la tecnología de red, los sitios web o aplicaciones que usas, y la hora del día. Además, las velocidades pueden variar dependiendo de la infraestructura de red del país. Si estás experimentando velocidades lentas, intenta reiniciar tu teléfono y comparte con nosotros cualquier resultado de velocidad, especialmente comparaciones con y sin LTE mode habilitado.',
   ],
   [
     'question' => '¿Cómo puedo ver mis bundles?',

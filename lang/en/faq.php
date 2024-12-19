@@ -49,7 +49,7 @@ return [
   ],
   [
     'question' => 'Why is my data speed slow?',
-    'answer' => 'Data speed can be affected by various factors, including the type of smartphone you have, network technology, the websites or apps you use, and the time of day. In addition, speeds can vary depending on the network infrastructure of the country. If you are experiencing slow speeds, try restarting your phone and share any speed results with us, especially comparisons with and without :LTE mode enabled.',
+    'answer' => 'Data speed can be affected by various factors, including the type of smartphone you have, network technology, the websites or apps you use, and the time of day. In addition, speeds can vary depending on the network infrastructure of the country. If you are experiencing slow speeds, try restarting your phone and share any speed results with us, especially comparisons with and without LTE mode enabled.',
   ],
   [
     'question' => 'How can I view my bundles?',

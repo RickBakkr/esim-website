@@ -49,7 +49,7 @@ return [
   ],
   [
     'question' => 'Veri hızım neden yavaş?',
-    'answer' => 'Veri hızı, sahip olduğunuz akıllı telefonun türü, ağ teknolojisi, kullandığınız web siteleri veya uygulamalar ve günün saati gibi çeşitli faktörlerden etkilenebilir. Ayrıca, hızlar ülkenin ağ altyapısına bağlı olarak değişebilir. Eğer yavaş hızlar yaşıyorsanız, telefonunuzu yeniden başlatmayı deneyin ve özellikle :LTE modu etkinleştirildiğinde ve etkinleştirilmediğinde yapılan hız karşılaştırmalarıyla birlikte herhangi bir hız sonucunu bizimle paylaşın.',
+    'answer' => 'Veri hızı, sahip olduğunuz akıllı telefonun türü, ağ teknolojisi, kullandığınız web siteleri veya uygulamalar ve günün saati gibi çeşitli faktörlerden etkilenebilir. Ayrıca, hızlar ülkenin ağ altyapısına bağlı olarak değişebilir. Eğer yavaş hızlar yaşıyorsanız, telefonunuzu yeniden başlatmayı deneyin ve özellikle LTE modu etkinleştirildiğinde ve etkinleştirilmediğinde yapılan hız karşılaştırmalarıyla birlikte herhangi bir hız sonucunu bizimle paylaşın.',
   ],
   [
     'question' => 'Paketlerimi nasıl görüntüleyebilirim?',
