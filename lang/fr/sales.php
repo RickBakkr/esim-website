@@ -23,7 +23,7 @@ return [
     'feature_three' => 'Mise à niveau simple dans votre portail personnel',
   ],
   'buy_now' => 'Achetez maintenant',
-  'starting_from' => 'Commencer à partir de',
+  'starting_from' => 'À partir de',
   'choose_destination' => 'Trouvez une destination',
   'how_esim_works' => [
     'title' => 'Comment fonctionne l\'eSIM',
