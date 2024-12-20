@@ -12,7 +12,7 @@
                 @if(file_exists(public_path('images/flags/' . strtolower($flag) . '.svg')))
                     <img src="{{ asset('images/flags/' . strtolower($flag) . '.svg') }}" alt="{{ trans('countries.' . strtoupper($flag)) }}" class="w-full h-full object-contain">
                 @else
-                    <img src="{{ asset('images/flags/EU.svg') }}" alt="{{ trans('countries.' . 'EU') }}" class="w-full h-full object-contain">
+                    <img src="{{ asset('images/flags/eu.svg') }}" alt="{{ trans('countries.' . 'EU') }}" class="w-full h-full object-contain">
                 @endif
             </div>
             <div class="flex-col justify-start items-start inline-flex">
