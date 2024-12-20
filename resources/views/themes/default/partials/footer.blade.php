@@ -11,6 +11,10 @@
                     @foreach(config('address.lines') as $line)
                         <p>{{ $line }}</p>
                     @endforeach
+
+                    @if(!empty(config('address.phone')))
+                        <p>{{ config('address.phone') }}</p>
+                    @endif
                 </div>
             </div>
             <nav class="flex space-x-6 text-sm/6 mt-12 sm:mt-0" aria-label="Footer">
