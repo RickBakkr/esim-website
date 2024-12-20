@@ -13,7 +13,7 @@ class SitemapController extends Controller
         $sitemapService = new SitemapService('sitemapindex');
         $languages = getLanguages();
 
-        foreach($languages as $language) {
+        foreach($languages as $language => $text) {
             $sitemapService->addSitemap(url('/sitemap-' . $language . '.xml'));
         }
 
@@ -22,6 +22,7 @@ class SitemapController extends Controller
 
     public function language($language) {
         $languages = getLanguages();
+        $languages = array_keys($languages);
 
         if(!in_array($language, $languages)) {
             abort(404);

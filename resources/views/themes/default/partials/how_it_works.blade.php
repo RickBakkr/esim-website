@@ -7,7 +7,7 @@
     </div>
     <div>
 
-        <div x-data="{step: 1}" class="justify-start items-center gap-16 inline-flex">
+        <div x-data="{step: 0}" class="justify-start items-center gap-16 inline-flex">
             <div class="grow shrink basis-0 flex-col justify-start items-start inline-flex">
 
                 @foreach(trans('sales.how_esim_works.steps') as $index => $step)
