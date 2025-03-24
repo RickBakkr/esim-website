@@ -5,7 +5,6 @@
 return [
   'title' => 'خدمة eSIM - بطاقات SIM افتراضية مسبقة الدفع للمسافرين - :site_name',
   'description' => 'eSIM-service ⏩ بطاقات SIM رقمية مسبقة الدفع للسياحة والأعمال ⏩ خطط بيانات محلية وعالمية قياسية وغير محدودة ⏩ لا عقود ✅ لا رسوم تجوال مخفية أو تعويضات ✅ - :site_name',
-  'keywords' => 'eSIM، eSIM-service، eSIM-kaart، eSIM-gegevens، eSIM-gegevensplan، eSIM-gegevensplannen، eSIM-gegevensplan voor reizigers، eSIM-gegevensplan voor toeristen، eSIM-gegevensplan voor bedrijven، eSIM-gegevensplan voor reizen، eSIM-gegevensplan voor Europa، eSIM-gegevensplan voor de VS، eSIM-gegevensplan voor Azië، eSIM-gegevensplan voor Afrika، eSIM-gegevensplan voor Australië، eSIM-gegevensplan voor Zuid-Amerika، eSIM-gegevensplan voor Noord-Amerika، eSIM-gegevensplan voor het Midden-Oosten، eSIM-gegevensplan voor Rusland، eSIM-gegevensplan voor China، eSIM-gegevensplan voor India، eSIM-gegevensplan voor Japan',
   'routes' => [
     'home' => [
       'title' => 'خدمة eSIM - بطاقات SIM افتراضية مدفوعة مسبقًا للمسافرين - :site_name',
@@ -24,4 +23,5 @@ return [
       'description' => 'eSIM :countryName ⏩ بطاقات SIM رقمية مسبقة الدفع للسياحة والأعمال ⏩ خطط بيانات محلية وعالمية قياسية وغير محدودة ⏩ لا عقود ✅ لا توجد رسوم تجوال مخفية أو تعويضات ✅ - :site_name',
     ],
   ],
+  'keywords' => 'eSIM، خدمة eSIM، بطاقة eSIM، بيانات eSIM، خطة بيانات eSIM، خطط بيانات eSIM، خطة بيانات eSIM للمسافرين، خطة بيانات eSIM للسياح، خطة بيانات eSIM للشركات، خطة بيانات eSIM للسفر، خطة بيانات eSIM لأوروبا، خطة بيانات eSIM للولايات المتحدة، خطة بيانات eSIM لآسيا، خطة بيانات eSIM لأفريقيا، خطة بيانات eSIM لأستراليا، خطة بيانات eSIM لأمريكا الجنوبية، خطة بيانات eSIM لأمريكا الشمالية، خطة بيانات eSIM للشرق الأوسط، خطة بيانات eSIM لروسيا، خطة بيانات eSIM للصين، خطة بيانات eSIM للهند، خطة بيانات eSIM لليابان',
 ];
