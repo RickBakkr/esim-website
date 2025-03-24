@@ -4,24 +4,24 @@
 
 return [
   'title' => 'eSIM paslauga - Išankstinio apmokėjimo virtualios SIM kortelės keliautojams - :site_name',
-  'description' => 'eSIM paslauga ⏩ Išankstinio apmokėjimo skaitmeninės SIM kortelės turizmui ir verslui ⏩ Standartiniai ir neriboti, vietiniai ir pasauliniai mobiliojo ryšio duomenų planai ⏩ Jokios sutartys ✅ Jokios paslėptos tarptautinio roaming\'o mokesčių ir rinkliavų ✅ - :site_name',
-  'keywords' => 'eSIM, eSIM paslauga, eSIM kortelė, eSIM duomenys, eSIM duomenų planas, eSIM duomenų planai, eSIM duomenų planas keliautojams, eSIM duomenų planas turistams, eSIM duomenų planas verslui, eSIM duomenų planas kelionėms, eSIM duomenų planas Europai, eSIM duomenų planas JAV, eSIM duomenų planas Azijai, eSIM duomenų planas Afrikai, eSIM duomenų planas Australijai, eSIM duomenų planas Pietų Amerikai, eSIM duomenų planas Šiaurės Amerikai, eSIM duomenų planas Artimiesiems Rytams, eSIM duomenų planas Rusijai, eSIM duomenų planas Kinijai, eSIM duomenų planas Indijai, eSIM duomenų planas Japonijai',
+  'description' => 'eSIM-paslaugos ⏩ Išankstinio apmokėjimo skaitmeniniai SIM kortelės turizmui ir verslui ⏩ Standartiniai ir neriboti, vietiniai ir pasauliniai mobilieji duomenų planai ⏩ Jokie sutartys ✅ Jokios paslėptos tarptinklinio ryšio išlaidos ir kompensacijos ✅ - :site_name',
+  'keywords' => 'eSIM, eSIM-paslaugos, eSIM-kortelė, eSIM-duomenys, eSIM-duomenų planas, eSIM-duomenų planai, eSIM-duomenų planas keliautojams, eSIM-duomenų planas turistams, eSIM-duomenų planas verslui, eSIM-duomenų planas kelionėms, eSIM-duomenų planas Europai, eSIM-duomenų planas JAV, eSIM-duomenų planas Azijai, eSIM-duomenų planas Afrikai, eSIM-duomenų planas Australijai, eSIM-duomenų planas Pietų Amerikai, eSIM-duomenų planas Šiaurės Amerikai, eSIM-duomenų planas Artimiesiems Rytams, eSIM-duomenų planas Rusijai, eSIM-duomenų planas Kinijai, eSIM-duomenų planas Indijai, eSIM-duomenų planas Japonijai',
   'routes' => [
     'home' => [
       'title' => 'eSIM paslauga - Išankstinio apmokėjimo virtualios SIM kortelės keliautojams - :site_name',
-      'description' => 'eSIM paslauga ⏩ Išankstinio apmokėjimo skaitmeninės SIM kortelės turizmui ir verslui ⏩ Standartiniai ir neriboti, vietiniai ir pasauliniai mobiliojo ryšio duomenų planai ⏩ Nėra sutarčių ✅ Nėra paslėptų roaming\'o mokesčių ir mokesčių ✅ - :site_name',
+      'description' => 'eSIM-paslaugos ⏩ Išankstinio apmokėjimo skaitmeninės SIM kortelės turizmui ir verslui ⏩ Standartiniai ir neriboti, vietiniai ir pasauliniai mobiliųjų duomenų planai ⏩ Nėra sutarčių ✅ Nėra paslėptų tarptinklinio ryšio mokesčių ir kompensacijų ✅ - :site_name',
     ],
     'about' => [
       'title' => 'Apie mus - :site_name',
-      'description' => 'Apie mus ⏩ Išankstiniai skaitmeniniai SIM kortelės turizmui ir verslui ⏩ Standartiniai ir neriboti, vietiniai ir pasauliniai mobiliojo telefono duomenų planai ⏩ Jokios sutartys ✅ Jokios paslėptos tarptautinio roaming\'o mokesčių ir mokesčių ✅ - :site_name',
+      'description' => 'Apie mus ⏩ Išankstinio mokėjimo skaitmeniniai SIM kortelės turizmui ir verslui ⏩ Standartiniai ir neriboti, vietiniai ir pasauliniai mobiliųjų duomenų planai ⏩ Jokios sutartys ✅ Jokios paslėptos tarptinklinio ryšio išlaidos ir mokesčiai ✅ - :site_name',
     ],
     'supported-devices' => [
       'title' => 'Palaikomos įrenginiai - :site_name',
-      'description' => 'Palaikomos įrenginiai ⏩ Išankstinio apmokėjimo skaitmeniniai SIM kortelės turizmui ir verslui ⏩ Standartiniai ir neriboti, vietiniai ir pasauliniai mobiliųjų telefonų duomenų planai ⏩ Jokios sutartys ✅ Jokios paslėptos tarptinklinio ryšio mokesčių ir rinkliavų ✅ - :site_name',
+      'description' => 'Palaikomi įrenginiai ⏩ Išankstinio apmokėjimo skaitmeninės SIM kortelės turizmui ir verslui ⏩ Standartiniai ir neriboti, vietiniai ir pasauliniai mobiliųjų duomenų planai ⏩ Jokios sutartys ✅ Jokios paslėptos roamingo išlaidos ir mokesčiai ✅ - :site_name',
     ],
     'esim-bundle-per-country' => [
-      'title' => 'Prieinamos vietinės eSIM pasiūlymai :countryName - :site_name',
-      'description' => 'Prieinamos vietinės eSIM pasiūlymai :countryName ⏩ Išankstiniai skaitmeniniai SIM kortelės turizmui ir verslui ⏩ Standartiniai ir neriboti, vietiniai ir pasauliniai mobiliojo telefono duomenų planai ⏩ Jokios sutartys ✅ Jokios paslėptos tarptautinio ryšio mokesčių ir mokesčių ✅ - :site_name',
+      'title' => 'eSIM :countryName - :site_name',
+      'description' => 'eSIM :countryName ⏩ Išankstinio apmokėjimo skaitmeninės SIM kortelės turizmui ir verslui ⏩ Standartiniai ir neriboti, vietiniai ir pasauliniai mobiliųjų duomenų planai ⏩ Jokios sutartys ✅ Jokios paslėptos roamingo išlaidos ir mokesčiai ✅ - :site_name',
     ],
   ],
 ];

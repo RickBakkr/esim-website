@@ -4,24 +4,24 @@
 
 return [
   'title' => 'eSIM-service - Forudbetalte virtuelle SIM-kort til rejsende - :site_name',
-  'description' => 'eSIM-service ⏩ Forudbetalte digitale SIM-kort til turisme og erhverv ⏩ Standard og ubegrænsede, lokale og globale mobildata-planer ⏩ Ingen kontrakter ✅ Ingen skjulte roaminggebyrer og -afgifter ✅ - :site_name',
-  'keywords' => 'eSIM, eSIM-service, eSIM-kort, eSIM-data, eSIM-data plan, eSIM-data planer, eSIM-data plan for rejsende, eSIM-data plan for turister, eSIM-data plan for erhvervslivet, eSIM-data plan for rejser, eSIM-data plan for Europa, eSIM-data plan for USA, eSIM-data plan for Asien, eSIM-data plan for Afrika, eSIM-data plan for Australien, eSIM-data plan for Sydamerika, eSIM-data plan for Nordamerika, eSIM-data plan for Mellemøsten, eSIM-data plan for Rusland, eSIM-data plan for Kina, eSIM-data plan for Indien, eSIM-data plan for Japan',
+  'description' => 'eSIM-service ⏩ Prepaid digitale SIM-kort til turisme og erhverv ⏩ Standard og ubegrænsede, lokale og globale mobil dataplaner ⏩ Ingen kontrakter ✅ Ingen skjulte roamingomkostninger og -gebyrer ✅ - :site_name',
+  'keywords' => 'eSIM, eSIM-service, eSIM-kort, eSIM-data, eSIM-data plan, eSIM-data planer, eSIM-data plan for rejsende, eSIM-data plan for turister, eSIM-data plan for virksomheder, eSIM-data plan for rejser, eSIM-data plan for Europa, eSIM-data plan for USA, eSIM-data plan for Asien, eSIM-data plan for Afrika, eSIM-data plan for Australien, eSIM-data plan for Sydamerika, eSIM-data plan for Nordamerika, eSIM-data plan for Mellemøsten, eSIM-data plan for Rusland, eSIM-data plan for Kina, eSIM-data plan for Indien, eSIM-data plan for Japan',
   'routes' => [
     'home' => [
-      'title' => 'eSIM-service - Forudbetalte virtuelle SIM-kort til rejsende - :site_name',
-      'description' => 'eSIM-service ⏩ Forudbetalte digitale SIM-kort til turisme og erhverv ⏩ Standard og ubegrænsede, lokale og globale mobildata planer ⏩ Ingen kontrakter ✅ Ingen skjulte roamingafgifter og gebyrer ✅ - :site_name',
+      'title' => 'eSIM-service - Prepaid virtuelle SIM-kort til rejsende - :site_name',
+      'description' => 'eSIM-service ⏩ Prepaid digitale SIM-kort til turisme og erhverv ⏩ Standard og ubegrænsede, lokale og globale mobil dataplaner ⏩ Ingen kontrakter ✅ Ingen skjulte roamingomkostninger og -gebyrer ✅ - :site_name',
     ],
     'about' => [
       'title' => 'Om os - :site_name',
-      'description' => 'Om os ⏩ Forudbetalte digitale SIM-kort til turisme og erhverv ⏩ Standard- og ubegrænsede, lokale og globale mobildata-planer ⏩ Ingen kontrakter ✅ Ingen skjulte roaminggebyrer og -afgifter ✅ - :site_name',
+      'description' => 'Om os ⏩ Prepaid digitale SIM-kort til turisme og erhverv ⏩ Standard og ubegrænsede, lokale og globale mobil dataplaner ⏩ Ingen kontrakter ✅ Ingen skjulte roamingomkostninger og -gebyrer ✅ - :site_name',
     ],
     'supported-devices' => [
-      'title' => 'Understøttede enheder - :site_name',
-      'description' => 'Understøttede enheder ⏩ Forudbetalte digitale SIM-kort til turisme og erhverv ⏩ Standard og ubegrænsede, lokale og globale mobildata planer ⏩ Ingen kontrakter ✅ Ingen skjulte roamingafgifter og gebyrer ✅ - :site_name',
+      'title' => 'Understøttede Enheder - :site_name',
+      'description' => 'Understøttede Enheder ⏩ Prepaid digitale SIM-kort til turisme og forretning ⏩ Standard og ubegrænsede, lokale og globale mobil dataplaner ⏩ Ingen kontrakter ✅ Ingen skjulte roamingomkostninger og -gebyrer ✅ - :site_name',
     ],
     'esim-bundle-per-country' => [
-      'title' => 'Overkommelige lokale eSIM-tilbud til :countryName - :site_name',
-      'description' => 'Overkommelige lokale eSIM-tilbud til :countryName ⏩ Forudbetalte digitale SIM-kort til turisme og erhverv ⏩ Standard og ubegrænsede, lokale og globale mobildata-planer ⏩ Ingen kontrakter ✅ Ingen skjulte roamingafgifter og gebyrer ✅ - :site_name',
+      'title' => 'eSIM :countryName - :site_name',
+      'description' => 'eSIM :countryName ⏩ Prepaid digitale SIM-kort til turisme og erhverv ⏩ Standard og ubegrænsede, lokale og globale mobil dataplaner ⏩ Ingen kontrakter ✅ Ingen skjulte roamingomkostninger og -gebyrer ✅ - :site_name',
     ],
   ],
 ];

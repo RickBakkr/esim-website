@@ -4,24 +4,24 @@
 
 return [
   'title' => 'eSIM-palvelu - Ennakkomaksulliset virtuaaliset SIM-kortit matkailijoille - :site_name',
-  'description' => 'eSIM-palvelu ⏩ Esimaksulliset digitaaliset SIM-kortit matkailua ja liiketoimintaa varten ⏩ Standardi- ja rajattomat, paikalliset ja globaalit matkapuhelindatapalvelut ⏩ Ei sopimuksia ✅ Ei piilotettuja roaming-maksuja ja -kuluja ✅ - :site_name',
-  'keywords' => 'eSIM, eSIM-palvelu, eSIM-kortti, eSIM-data, eSIM-datapaketti, eSIM-datapaketteja, eSIM-datapaketti matkailijoille, eSIM-datapaketti turisteille, eSIM-datapaketti yrityksille, eSIM-datapaketti matkustamiseen, eSIM-datapaketti Eurooppaan, eSIM-datapaketti Yhdysvaltoihin, eSIM-datapaketti Aasiaan, eSIM-datapaketti Afrikkaan, eSIM-datapaketti Australiaan, eSIM-datapaketti Etelä-Amerikkaan, eSIM-datapaketti Pohjois-Amerikkaan, eSIM-datapaketti Lähi-itään, eSIM-datapaketti Venäjälle, eSIM-datapaketti Kiinaan, eSIM-datapaketti Intiaan, eSIM-datapaketti Japaniin',
+  'description' => 'eSIM-palvelu ⏩ Ennakkomaksulliset digitaaliset SIM-kortit matkailua ja liiketoimintaa varten ⏩ Standardi ja rajattomat, paikalliset ja globaalit mobiilidatapaketit ⏩ Ei sopimuksia ✅ Ei piilokuluja ja -korvauksia ✅ - :site_name',
+  'keywords' => 'eSIM, eSIM-palvelu, eSIM-kortti, eSIM-tiedot, eSIM-tietosuunnitelma, eSIM-tietosuunnitelmat, eSIM-tietosuunnitelma matkustajille, eSIM-tietosuunnitelma turisteille, eSIM-tietosuunnitelma yrityksille, eSIM-tietosuunnitelma matkustamiseen, eSIM-tietosuunnitelma Eurooppaan, eSIM-tietosuunnitelma Yhdysvaltoihin, eSIM-tietosuunnitelma Aasiaan, eSIM-tietosuunnitelma Afrikkaan, eSIM-tietosuunnitelma Australiaan, eSIM-tietosuunnitelma Etelä-Amerikkaan, eSIM-tietosuunnitelma Pohjois-Amerikkaan, eSIM-tietosuunnitelma Lähi-itään, eSIM-tietosuunnitelma Venäjälle, eSIM-tietosuunnitelma Kiinaan, eSIM-tietosuunnitelma Intiaan, eSIM-tietosuunnitelma Japaniin',
   'routes' => [
     'home' => [
-      'title' => 'eSIM-palvelu - Ennakkomaksulliset virtuaaliset SIM-kortit matkailijoille - :site_name',
-      'description' => 'eSIM-palvelu ⏩ Ennakkomaksulliset digitaaliset SIM-kortit matkailua ja liiketoimintaa varten ⏩ Standardi- ja rajattomat, paikalliset ja globaalit matkapuhelindatapalvelut ⏩ Ei sopimuksia ✅ Ei piilotettuja roaming-maksuja ja -kuluja ✅ - :site_name',
+      'title' => 'eSIM-palvelu - Esimaksulliset virtuaaliset SIM-kortit matkailijoille - :site_name',
+      'description' => 'eSIM-palvelu ⏩ Ennakkomaksulliset digitaaliset SIM-kortit matkailua ja liiketoimintaa varten ⏩ Standardi- ja rajoittamattomat, paikalliset ja maailmanlaajuiset mobiilidatapaketit ⏩ Ei sopimuksia ✅ Ei piilossa olevia roaming-kustannuksia ja -korvauksia ✅ - :site_name',
     ],
     'about' => [
-      'title' => 'Tietoa meistä - :site_name',
-      'description' => 'Meistä ⏩ Ennakkomaksulliset digitaaliset SIM-kortit matkailua ja liiketoimintaa varten ⏩ Standardi- ja rajattomat, paikalliset ja globaalit matkapuhelindatapalvelut ⏩ Ei sopimuksia ✅ Ei piilotettuja roaming-maksuja ja -kuluja ✅ - :site_name',
+      'title' => 'Meistä - :site_name',
+      'description' => 'Meistä ⏩ Ennakkoon maksetut digitaaliset SIM-kortit matkailua ja liiketoimintaa varten ⏩ Vakiot ja rajattomat, paikalliset ja globaalit mobiilidatapaketit ⏩ Ei sopimuksia ✅ Ei piilokuluja tai -maksuja ✅ - :site_name',
     ],
     'supported-devices' => [
       'title' => 'Tuetut laitteet - :site_name',
-      'description' => 'Tuetut laitteet ⏩ Ennakkomaksulliset digitaaliset SIM-kortit matkailua ja liiketoimintaa varten ⏩ Standardi- ja rajattomat, paikalliset ja globaalit matkapuhelindatapaketit ⏩ Ei sopimuksia ✅ Ei piilotettuja roaming-maksuja ja -kuluja ✅ - :site_name',
+      'description' => 'Tuetut laitteet ⏩ Ennakkomaksulliset digitaaliset SIM-kortit matkailua ja liiketoimintaa varten ⏩ Standardi ja rajoittamaton, paikallinen ja maailmanlaajuinen mobiilidatapaketit ⏩ Ei sopimuksia ✅ Ei piilokuluja tai -korvauksia ✅ - :site_name',
     ],
     'esim-bundle-per-country' => [
-      'title' => 'Edulliset paikalliset eSIM-tarjoukset :countryName - :site_name',
-      'description' => 'Edulliset paikalliset eSIM-tarjoukset :countryName ⏩ Ennakkomaksulliset digitaaliset SIM-kortit matkailua ja liiketoimintaa varten ⏩ Standardi- ja rajattomat, paikalliset ja globaalit matkapuhelindatapalvelut ⏩ Ei sopimuksia ✅ Ei piilossa olevia roaming-maksuja ja -kuluja ✅ - :site_name',
+      'title' => 'eSIM :countryName - :site_name',
+      'description' => 'eSIM :countryName ⏩ Esim-kortit matkailuun ja liiketoimintaan ⏩ Standardi- ja rajattomat, paikalliset ja globaalit mobiilidatayhteydet ⏩ Ei sopimuksia ✅ Ei piilossa olevia roamingmaksuja tai -korvauksia ✅ - :site_name',
     ],
   ],
 ];
