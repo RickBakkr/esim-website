@@ -20,8 +20,8 @@ return [
       'description' => 'Ondersteunde Apparaten ⏩ Prepaid digitale SIM-kaarten voor toerisme en zaken ⏩ Standaard en onbeperkte, lokale en wereldwijde mobiele dataplannen ⏩ Geen contracten ✅ Geen verborgen roamingkosten en -vergoedingen ✅ - :site_name',
     ],
     'esim-bundle-per-country' => [
-      'title' => 'Betaalbare lokale eSIM-aanbiedingen voor :countryName - :site_name',
-      'description' => 'Betaalbare lokale eSIM-deals voor :countryName ⏩ Prepaid digitale SIM-kaarten voor toerisme en zaken ⏩ Standaard en onbeperkte, lokale en wereldwijde mobiele dataplannen ⏩ Geen contracten ✅ Geen verborgen roamingkosten en -vergoedingen ✅ - :site_name',
+      'title' => 'eSIM :countryName - :site_name',
+      'description' => 'eSIM :countryName ⏩ Prepaid digitale SIM-kaarten voor toerisme en zaken ⏩ Standaard en onbeperkte, lokale en wereldwijde mobiele dataplannen ⏩ Geen contracten ✅ Geen verborgen roamingkosten en -vergoedingen ✅ - :site_name',
     ],
   ],
 ];

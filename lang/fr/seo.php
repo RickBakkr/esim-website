@@ -4,7 +4,7 @@
 
 return [
   'title' => 'eSIM-service - Cartes SIM virtuelles prépayées pour les voyageurs - :site_name',
-  'description' => 'eSIM-service ⏩ Cartes SIM numériques prépayées pour le tourisme et les affaires ⏩ Plans de données mobiles standard et illimités, locaux et mondiaux ⏩ Aucun contrat ✅ Aucun frais ou remboursement d\'itinérance caché ✅ - :site_name',
+  'description' => 'eSIM-service ⏩ Cartes SIM numériques prépayées pour le tourisme et les affaires ⏩ Plans de données mobiles standards et illimités, locaux et mondiaux ⏩ Pas de contrats ✅ Pas de frais d\'itinérance cachés et de frais ✅ - :site_name',
   'keywords' => 'eSIM, service eSIM, carte eSIM, données eSIM, plan de données eSIM, plans de données eSIM, plan de données eSIM pour les voyageurs, plan de données eSIM pour les touristes, plan de données eSIM pour les entreprises, plan de données eSIM pour les voyages, plan de données eSIM pour l\'Europe, plan de données eSIM pour les États-Unis, plan de données eSIM pour l\'Asie, plan de données eSIM pour l\'Afrique, plan de données eSIM pour l\'Australie, plan de données eSIM pour l\'Amérique du Sud, plan de données eSIM pour l\'Amérique du Nord, plan de données eSIM pour le Moyen-Orient, plan de données eSIM pour la Russie, plan de données eSIM pour la Chine, plan de données eSIM pour l\'Inde, plan de données eSIM pour le Japon',
   'routes' => [
     'home' => [
@@ -13,15 +13,15 @@ return [
     ],
     'about' => [
       'title' => 'À propos de nous - :site_name',
-      'description' => 'À propos de nous ⏩ Cartes SIM numériques prépayées pour le tourisme et les affaires ⏩ Forfaits de données mobiles standard et illimités, locaux et mondiaux ⏩ Pas de contrats ✅ Pas de frais ou de charges d\'itinérance cachés ✅ - :site_name',
+      'description' => 'À propos de nous ⏩ Cartes SIM numériques prépayées pour le tourisme et les affaires ⏩ Plans de données mobiles standard et illimités, locaux et mondiaux ⏩ Pas de contrats ✅ Pas de frais de roaming cachés et de remboursements ✅ - :site_name',
     ],
     'supported-devices' => [
       'title' => 'Appareils pris en charge - :site_name',
-      'description' => 'Appareils pris en charge ⏩ Cartes SIM numériques prépayées pour le tourisme et les affaires ⏩ Forfaits de données mobiles standard et illimités, locaux et mondiaux ⏩ Pas de contrats ✅ Pas de frais et de charges de roaming cachés ✅ - :site_name',
+      'description' => 'Appareils pris en charge ⏩ Cartes SIM numériques prépayées pour le tourisme et les affaires ⏩ Plans de données mobiles standard et illimités, locaux et mondiaux ⏩ Pas de contrats ✅ Pas de frais de roaming cachés et de frais de remboursement ✅ - :site_name',
     ],
     'esim-bundle-per-country' => [
-      'title' => 'Offres eSIM locales abordables pour :countryName - :site_name',
-      'description' => 'Offres eSIM locales abordables pour :countryName ⏩ Cartes SIM numériques prépayées pour le tourisme et les affaires ⏩ Plans de données mobiles locaux et mondiaux standard et illimités ⏩ Pas de contrats ✅ Pas de frais d\'itinérance cachés et de frais de remboursement ✅ - :site_name',
+      'title' => 'eSIM :countryName - :site_name',
+      'description' => 'eSIM :countryName ⏩ Cartes SIM numériques prépayées pour le tourisme et les affaires ⏩ Forfaits de données mobiles standard et illimités, locaux et mondiaux ⏩ Pas de contrats ✅ Pas de frais de roaming cachés et de commissions ✅ - :site_name',
     ],
   ],
 ];
